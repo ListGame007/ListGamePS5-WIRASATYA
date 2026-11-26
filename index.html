@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#38bdf8">
+  <title>Bagus Permana Gamez | Katalog 1.53 Game PS5 HEN</title>
+  <style>
+    :root {
+      --blue: #0284c7;
+      --blue-glow: #0369a1;
+      --bg-dark: #e0f2fe;
+      --card-bg: #ffffff;
+      --line: #7dd3fc;
+      --text-main: #0f172a;
+      --muted: #475569;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .top {
+      background: #bae6fd;
+      padding: 20px 15px;
+      text-align: center;
+      border-bottom: 2px solid var(--blue);
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.15);
+    }
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .banner-img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
+    .logo-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .top-logo {
+      height: 70px;
+      object-fit: contain;
+    }
+    .top-text-logo {
+      max-height: 45px;
+      object-fit: contain;
+    }
+    .brand {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--blue-glow);
+    }
+    h1 {
+      font-size: clamp(22px, 4vw, 32px);
+      margin: 5px 0;
+      font-weight: 800;
+    }
+    .sub {
+      margin: 0;
+      color: #1e3a8a;
+      font-size: 14px;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: auto;
+      padding: 25px 15px 40px;
+    }
+    .tools {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 0 0 18px;
+    }
+    input {
+      flex: 1;
+      min-width: 220px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 15px;
+      background: #ffffff;
+      color: #0f172a;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+    input:focus {
+      border-color: var(--blue-glow);
+      box-shadow: 0 0 10px rgba(0, 198, 255, 0.3);
+    }
+    .count {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+      align-items: stretch;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--blue-glow);
+      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.15);
+    }
+    .cover {
+      aspect-ratio: 3/4;
+      background: linear-gradient(145deg, #0d2137, #1b3b6f);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .fallback {
+      color: #e2e8f0;
+      text-align: center;
+      padding: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .info {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      flex: 1;
+    }
+    /* Barisan judul game dibuat seragam tinggi & rapi */
+    .name {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.38;
+      height: 54px; /* Tinggi tetap untuk 3 baris teks */
+      color: #0f172a;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+    .wa {
+      display: block;
+      text-align: center;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 9px 6px;
+      border-radius: 8px;
+      margin-top: auto;
+      transition: opacity 0.2s;
+    }
+    .wa:hover {
+      opacity: 0.9;
+    }
+    .empty {
+      grid-column: 1/-1;
+      text-align: center;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 12px;
+      color: var(--muted);
+      border: 1px solid var(--line);
+    }
+    footer {
+      text-align: center;
+      padding: 30px 12px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+      background: #bae6fd;
+    }
+    footer strong { color: var(--blue-glow); }
+    /* Checkbox pilihan multiple game */
+    .game-select {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 5;
+      width: 25px;
+      height: 25px;
+      min-width: 25px;
+      margin: 0;
+      padding: 0;
+      accent-color: #00c853;
+      cursor: pointer;
+      background: rgba(0,0,0,.75);
+      border: 2px solid #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.65);
+    }
+    .cover.is-selected { outline: 3px solid #00c853; outline-offset: -3px; }
+    .multi-wa {
+      position: fixed;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 14px;
+      border-radius: 999px;
+      background: #16a34a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 5px 18px rgba(0,0,0,.4);
+      border: 2px solid rgba(255,255,255,.85);
+    }
+    .multi-wa .multi-count {
+      display: inline-flex;
+      min-width: 23px;
+      height: 23px;
+      padding: 0 6px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      background: #fff;
+      color: #12813c;
+      font-size: 12px;
+    }
+    @media (max-width: 520px) {
+      .multi-wa { right: 8px; padding: 10px 12px; font-size: 11px; }
+    }
+    @media (max-width: 420px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .wrap { padding-left: 10px; padding-right: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="header-container">
+      <img src="BAGUS PERMANA 1X3.jpg" alt="Banner Bagus Permana Gamez" class="banner-img">
+      <div class="logo-row">
+        <img src="LOGO BPG.png" alt="Logo BPG" class="top-logo">
+        <img src="Gemini_Generated_Image_o9nay8o9nay8o9na-removebg-preview.jpg" alt="Bagus Permana Gamez" class="top-text-logo">
+      </div>
+      <div>
+        <div class="brand">[ Spesialis Jasa Pengisian Game Playstation sejak tahun 2013 & Service Playstation ]</div>
+        <h1>KATALOG GAME PS5 HEN Total 1.573 JUDUL</h1>
+        <p class="sub">Pilih game favoritmu — Klik tandai kolom centang & pilih beberapa games request kamu, lanjutkan untuk tanya via WhatsApp</p>
+        <div style="font-size: 14px; font-style: italic; margin: 12px 0 15px; text-align: center;">
+          Click saja Akun Sosial Media kami untuk Follow :
+        </div>
+
+        <!-- Tombol Sosial Media -->
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 10px;">
+          <a href="https://www.facebook.com/baguspermanagamez/" target="_blank" rel="noopener"><img height="36" width="38" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVdFxshqNYoyQtUula0qlEP0ijFVPk4vNypB4PHx18VpMSmO2CVj6OS3LWzY_5NOelK1nZ5yISnV4mXx5YJlpv1n2H0aC5Nasrm7YDFFVRkxy4_ZLdlcdLa49iTCZoJEg5BsLYhD85O-sRLAT75d2-j18LllZ7uTUaJRSbc0C1AI6_s8XUy43NXgyZP_lo/w42-h40/Facebook.png" style="border: 0px;" alt="Facebook" /></a>
+          <a href="https://x.com/Amazing42Bagus" target="_blank" rel="noopener"><img height="36" width="36" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkKzhDRlQNaxECPVtftJUNBGzvwEHnlTNgLPTtQnEuwa5eW7Fr64X3T22Wg9FjJsr8NJEkxgKCYGoNwll3HO77scJLpw1H8nWBDMqcPx3qZZQrMxdAVgnQEdwUHUl60mev1-aYQbw5v3Zhwov4N1Gx3N4nlYKogzj2wOxtrQ6TbzFQgP1LSYlPYU-JBK2P/w40-h41/TwetterX.png" style="border: 0px;" alt="X Twitter" /></a>
+          <a href="https://www.instagram.com/baguspermanagamez/" target="_blank" rel="noopener"><img height="36" width="36" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVyfPuONY93x1ZrZO0F9YYYoMRuQvdlUCIwhdbZZBTGe9EZudxmWQ-5xMHGJyvikeuoSWk6StQDRKtwj5sn18cxaVLMlDX7KYvV0bc0Pyap-nPzY3ichi2fmD_L0r2ERTFLpaq8vu8PHnd17_ZGSCLrnhQL7Ko546L2zCdVazW_A_haUrZHeGQfxHkTcGe/w41-h40/Instagram.png" style="border: 0px;" alt="Instagram" /></a>
+          <a href="https://bit.ly/YoutubeBagusPermanaGamez" target="_blank" rel="noopener"><img height="36" width="36" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4610I8bgMcMYUyHiTbIPHPEmDwdKzUZ_Fj2kUmkzFQkyWjI5Uz1svmiIiapFYRLAkJCz3YwDO5TvWtZsqu_cx3jDhU4Jm5bmhugf53KMhA4ouTkh7H9nLv8nxact6SQYV_AhjNFMaHsngP-eop9ojdhrw-8PvyA5AYDPjJQxm-Abf-46DmGqwxVsiqncK/w42-h41/Youtube.png" style="border: 0px;" alt="YouTube" /></a>
+          <a href="https://t.me/baguspermana666" target="_blank" rel="noopener"><img height="36" width="36" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEish9L8L7YxjFo1fOzs0gdb48s7CO2mzQgtwCuzV8cFwND5E8di8qpSCGrFwRuSJjza7R6KOqkJzEi3NOqKUBng6YFPDiTXWW0Hq3oWbw51RX7xoqoqlRoH7yyWDLkpdMtVr16IUO4l1IBOCq9Z32Fg2apN3FZijIHtNJ5rrt6D7LBTZ9iQeUG82lSB3JWV/w42-h41/Terlegram.png" style="border: 0px;" alt="Telegram" /></a>
+          <a href="https://wa.me/6287804168161" target="_blank" rel="noopener"><img height="36" width="36" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtClEZkva9lF4qvBpWQhw3dXTO8YS_Ax6a4TMqnVBBAOz_CYwUhlTmXzy9xc1Qb3s31aahPxCS_HSxHy0BlRhpS8174bFP5795KuYCGJL-BORoXmCfHl5fL6jc4ZBhzQQh_HLlcQ0EFUHvpIaz90YICNPvHkyFd_JWQkKLkFypwyaBj4_9JV2_MHL-QZO9/w40-h39/Whatapps.png" style="border: 0px;" alt="WhatsApp" /></a>
+          <a href="https://maps.app.goo.gl/w7ory5EpDHMQmsBj7" target="_blank" rel="noopener"><img height="36" width="36" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRn2JWkZ79r2KwSyy5E2-BTBXe_etbMAQbQlRoYNlQuZmrMy4NMx5Zpk1CaK036Y65oiCgVxbGKbTkuVr5XpGhKZaW-npmDHmBR4V__14ikTMzPuIvHnz4p8ACCEoKpXhTmp43Xo8_HqWswpksmOka4yQspfM1MKxkNgiMRUeheUn0moeOLO7VHpPHR_MV/w42-h42/GoogleMaps.png" style="border: 0px;" alt="Google Maps" /></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="tools">
+      <input id="search" type="search" placeholder="Cari judul game (misal: FIFA, God of War)..." aria-label="Cari game">
+    </div>
+    <p class="count" id="count"></p>
+    <section class="grid" id="games" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <strong>Bagus Permana Gamez</strong> · Jasa Isi Game & Servis PlayStation<br>
+    WhatsApp: 087804168161
+  </footer>
+
+  <a class="multi-wa" id="multiWa" href="#" target="_blank" rel="noopener"
+     aria-label="Pesan beberapa game melalui WhatsApp">
+    <span>WhatsApp Pesanan</span>
+    <span class="multi-count" id="selectedCount">0</span>
+  </a>
+
+  <script>
+    const waNumber = "6287804168161";
+
+// Data 1.573 Judul Game PS5 HEN dalam Format Tuple/Array 2D
+const rawGamesData = [
+  ["007 First Light", "0001. 007 First Light.jpg"],
+  ["1348 Ex Voto", "0002. 1348 Ex Voto.jpg"],
+  ["15 in 1 Solitaire", "0003. 15 in 1 Solitaire.jpg"],
+  ["2Xtreme", "0004. 2Xtreme.jpg"],
+  ["3D Billiards Pool and Snooker Remastered", "0005. 3D Billiards Pool and Snooker Remastered.jpg"],
+  ["3D MiniGolf", "0006. 3D MiniGolf.jpg"],
+  ["41 Hours", "0007. 41 Hours.jpg"],
+  ["63 Days", "0008. 63 Days.jpg"],
+  ["7 Days to Die Console Edition", "0009. 7 Days to Die Console Edition.jpg"],
+  ["A Game About Digging A Hole", "0010. A Game About Digging A Hole.jpg"],
+  ["A Love Letter in Snowfall", "0011. A Love Letter in Snowfall.jpg"],
+  ["A Memoir Blue", "0012. A Memoir Blue.jpg"],
+  ["A Plague Tale Innocence", "0013. A Plague Tale Innocence.jpg"],
+  ["A Plague Tale Requiem", "0014. A Plague Tale Requiem.jpg"],
+  ["A Quiet Place The Road Ahead", "0015. A Quiet Place The Road Ahead.jpg"],
+  ["A Time Travellers Guide To Past Delicacies", "0016. A Time Travellers Guide To Past Delicacies.jpg"],
+  ["AAA Dynamic Scenes", "0017. AAA Dynamic Scenes.jpg"],
+  ["Abandoned Realtime Trailers Demo", "0018. Abandoned Realtime Trailers Demo.jpg"],
+  ["Abiotic Factor", "0019. Abiotic Factor.jpg"],
+  ["Absolum", "0020. Absolum.jpg"],
+  ["ABSURDIKA Rebuild", "0021. ABSURDIKA Rebuild.jpg"],
+  ["Abyssus Brine Edition", "0022. Abyssus Brine Edition.jpg"],
+  ["Ace Combat 8 Wings of Theve", "0023. Ace Combat 8 Wings of Theve.jpg"],
+  ["Achilles Legends Untold", "0024. Achilles Legends Untold.jpg"],
+  ["Achilles Survivor", "0025. Achilles Survivor.jpg"],
+  ["Ad Infinitum", "0026. Ad Infinitum.jpg"],
+  ["Adorable Adventures", "0027. Adorable Adventures.jpg"],
+  ["Aeterna Noctis", "0028. Aeterna Noctis.jpg"],
+  ["AEW Fight Forever", "0029. AEW Fight Forever.jpg"],
+  ["After The Fall", "0030. After The Fall.jpg"],
+  ["Afterdream", "0031. Afterdream.jpg"],
+  ["Afterimage", "0032. Afterimage.jpg"],
+  ["Afterlife VR", "0033. Afterlife VR.jpg"],
+  ["Agatha Christie Death on The Nile", "0034. Agatha Christie Death on The Nile.jpg"],
+  ["Age of Mythology Retold", "0035. Age of Mythology Retold.jpg"],
+  ["Age of Wonders 4", "Age of Wonders 4.jpg"],
+  ["Agefield High Rock The School", "0036. Agefield High Rock The School.jpg"],
+  ["AI LIMIT", "0037. AI LIMIT.jpg"],
+  ["AILA", "0038. AILA.jpg"],
+  ["Alan Wake 2", "0039. Alan Wake 2.jpg"],
+  ["Alan Wake Remastered", "0040. Alan Wake Remastered.jpg"],
+  ["Alex Kidd in Miracle World DX", "0041. Alex Kidd in Miracle World DX.jpg"],
+  ["Alfred Hitchcock Vertigo", "0042. Alfred Hitchcock Vertigo.jpg"],
+  ["Alien Rogue Incursion", "0043. Alien Rogue Incursion.jpg"],
+  ["Alien Rogue Incursion Evolved Edition", "0044. Alien Rogue Incursion Evolved Edition.jpg"],
+  ["Aliens Dark Descent", "0045. Aliens Dark Descent.jpg"],
+  ["Aliens Fireteam Elite", "0046. Aliens Fireteam Elite.jpg"],
+  ["Alisa Developers Cut", "0047. Alisa Developers Cut.jpg"],
+  ["Alone In The Dark", "0048. Alone In The Dark.jpg"],
+  ["Alone in The Dark 2 (1996)", "0049. Alone in The Dark 2 (1996).jpg"],
+  ["Alone in The Dark The New Nightmare (2001)", "0050. Alone in The Dark The New Nightmare (2001).jpg"],
+  ["Alterity Experience", "0051. Alterity Experience.jpg"],
+  ["Amber Alert", "0052. Amber Alert.jpg"],
+  ["American Hero", "0053. American Hero.jpg"],
+  ["Among Us", "0054. Among Us.jpg"],
+  ["Anger Foot", "0055. Anger Foot.jpg"],
+  ["Anglerfish", "0056. Anglerfish.jpg"],
+  ["Animal Well", "0057. Animal Well.jpg"],
+  ["Anime Girls Sun of A Beach", "0058. Anime Girls Sun of A Beach.jpg"],
+  ["Anno 117 Pax Romana", "0059. Anno 117 Pax Romana.jpg"],
+  ["Anno 1800 Console Edition", "0060. Anno 1800 Console Edition.jpg"],
+  ["Another Crabs Treasure", "0061. Another Crabs Treasure.jpg"],
+  ["Ape Academy 2", "0062. Ape Academy 2.jpg"],
+  ["Ape Escape", "0063. Ape Escape.jpg"],
+  ["Ape Escape Academy", "0064. Ape Escape Academy.jpg"],
+  ["Ape Escape P (Ape Escape On The Loose)", "0065. Ape Escape P (Ape Escape On The Loose).jpg"],
+  ["Aphelion", "0066. Aphelion.jpg"],
+  ["Apsulov End of Gods", "0067. Apsulov End of Gods.jpg"],
+  ["Aragami 2", "0068. Aragami 2.jpg"],
+  ["Arcade Game Zone", "0069. Arcade Game Zone.jpg"],
+  ["Arcade Paradise", "0070. Arcade Paradise.jpg"],
+  ["Arcade Spirits The New Challengers", "0071. Arcade Spirits The New Challengers.jpg"],
+  ["Arcadegeddon", "0072. Arcadegeddon.jpg"],
+  ["ArcRunner", "0073. ArcRunner.jpg"],
+  ["Arizona Sunshine 2", "0074. Arizona Sunshine 2.jpg"],
+  ["Arizona Sunshine Remake", "0075. Arizona Sunshine Remake.jpg"],
+  ["ARK Survival Ascended", "0076. ARK Survival Ascended.jpg"],
+  ["Arkanoid Eternal Battle", "0077. Arkanoid Eternal Battle.jpg"],
+  ["ARMORED CORE", "0078. ARMORED CORE.jpg"],
+  ["Armored Core 6 Fires of Rubicon", "0079. Armored Core 6 Fires of Rubicon.jpg"],
+  ["Armored Core Master of Arena", "0080. Armored Core Master of Arena.jpg"],
+  ["Armored Core Project Phantasma", "0081. Armored Core Project Phantasma.jpg"],
+  ["Art of Rally", "0082. Art of Rally.jpg"],
+  ["Ascendshaft", "0083. Ascendshaft.jpg"],
+  ["Assassins Creed Black Flag Resynced", "0084. Assassins Creed Black Flag Resynced.jpg"],
+  ["Assassins Creed Mirage", "0085. Assassins Creed Mirage.jpg"],
+  ["Assassins Creed Shadows", "0086. Assassins Creed Shadows.jpg"],
+  ["Assassins Creed Valhalla", "0087. Assassins Creed Valhalla.jpg"],
+  ["Assetto Corsa Competizione", "0088. Assetto Corsa Competizione.jpg"],
+  ["Asterigos Curse of The Stars", "0089. Asterigos Curse of The Stars.jpg"],
+  ["Asterix and Obelix Babylon Mission", "0090. Asterix and Obelix Babylon Mission.jpg"],
+  ["Asterix and Obelix Heroes", "0091. Asterix and Obelix Heroes.jpg"],
+  ["Asterix and Obelix Slap Them All", "0092. Asterix and Obelix Slap Them All.jpg"],
+  ["Asterix and Obelix Slap Them All 2", "0093. Asterix and Obelix Slap Them All 2.jpg"],
+  ["Asterix and Obelix XXL 2", "0094. Asterix and Obelix XXL 2.jpg"],
+  ["Asterix and Obelix XXL 3 The Crystal Menhir", "0095. Asterix and Obelix XXL 3 The Crystal Menhir.jpg"],
+  ["Asterix and Obelix XXL Romastered", "0096. Asterix and Obelix XXL Romastered.jpg"],
+  ["Asterix and Obelix XXXL The Ram From Hibernia", "0097. Asterix and Obelix XXXL The Ram From Hibernia.jpg"],
+  ["Astria Ascending", "0098. Astria Ascending.jpg"],
+  ["ASTRO BOT", "0099. ASTRO BOT.jpg"],
+  ["ASTRONEER", "0100. ASTRONEER.jpg"],
+  ["Astros Playroom", "0101. Astros Playroom.jpg"],
+  ["Asylum", "0102. Asylum.jpg"],
+  ["Atari 50 The Anniversary Celebration", "0103. Atari 50 The Anniversary Celebration.jpg"],
+  ["Atelier Marie Remake The Alchemist of Salburg Digital Deluxe Edition", "0104. Atelier Marie Remake The Alchemist of Salburg Digital Deluxe Edition.jpg"],
+  ["Atelier Resleriana The Red Alchemist and The White Guardian", "0105. Atelier Resleriana The Red Alchemist and The White Guardian.jpg"],
+  ["Atelier Ryza 2 Lost Legends and The Secret Fairy DX", "0106. Atelier Ryza 2 Lost Legends and The Secret Fairy DX.jpg"],
+  ["Atelier Ryza 3 Alchemist of The End and The Secret Key DX", "0107. Atelier Ryza 3 Alchemist of The End and The Secret Key DX.jpg"],
+  ["Atelier Ryza Ever Darkness and The Secret Hideout DX", "0108. Atelier Ryza Ever Darkness and The Secret Hideout DX.jpg"],
+  ["Atelier Yumia The Alchemist of Memories and The Envisioned Land", "0109. Atelier Yumia The Alchemist of Memories and The Envisioned Land.jpg"],
+  ["Atlas Fallen", "0110. Atlas Fallen.jpg"],
+  ["Atomfall", "0111. Atomfall.jpg"],
+  ["Atomic Heart", "0112. Atomic Heart.jpg"],
+  ["Avatar Frontiers of Pandora", "0113. Avatar Frontiers of Pandora.jpg"],
+  ["Avatar The Last Airbender Quest for Balance", "0114. Avatar The Last Airbender Quest for Balance.jpg"],
+  ["Avowed", "0115. Avowed.jpg"],
+  ["Axiom Verge 2", "Axiom Verge 2.jpg"],
+  ["Away The Survival Series", "0116. Away The Survival Series.jpg"],
+  ["Azure Striker Gunvolt Trilogy Enhanced", "0117. Azure Striker Gunvolt Trilogy Enhanced.jpg"],
+  ["Baby Steps", "0118. Baby Steps.jpg"],
+  ["Back 4 Blood", "0119. Back 4 Blood.jpg"],
+  ["Balan Wonderworld", "0120. Balan Wonderworld.jpg"],
+  ["Balatro", "0121. Balatro.jpg"],
+  ["Baldurs Gate 3", "0122. Baldurs Gate 3.jpg"],
+  ["Ball X Pit", "0123. Ball X Pit.jpg"],
+  ["Bang On Balls Chronicles", "0124. Bang On Balls Chronicles.jpg"],
+  ["Banishers Ghosts of New Eden", "0125. Banishers Ghosts of New Eden.jpg"],
+  ["Barbie Project Friendship", "0126. Barbie Project Friendship.jpg"],
+  ["Bassmaster Fishing 2022", "0127. Bassmaster Fishing 2022.jpg"],
+  ["Battle Engine Aquila", "0128. Battle Engine Aquila.jpg"],
+  ["Battlefield 6", "0129. Battlefield 6.jpg"],
+  ["Beast of Reincarnation Digital Deluxe Edition", "0130. Beast of Reincarnation Digital Deluxe Edition.jpg"],
+  ["Beat Saber", "0131. Beat Saber.jpg"],
+  ["Bedrotting", "0132. Bedrotting.jpg"],
+  ["Bendy and The Dark Revival", "0133. Bendy and The Dark Revival.jpg"],
+  ["Bendy and The Ink Machine", "0134. Bendy and The Ink Machine.jpg"],
+  ["Bendy Lone Wolf", "0135. Bendy Lone Wolf.jpg"],
+  ["Beneath", "0136. Beneath.jpg"],
+  ["Beneath The Earth Backrooms", "0137. Beneath The Earth Backrooms.jpg"],
+  ["Besiege", "0138. Besiege.jpg"],
+  ["Beyond a Steel Sky", "0139. Beyond a Steel Sky.jpg"],
+  ["Beyond Good and Evil 20th Anniversary Edition", "0140. Beyond Good and Evil 20th Anniversary Edition.jpg"],
+  ["Bibi and Tina At The Horse Farm", "0141. Bibi and Tina At The Horse Farm.jpg"],
+  ["Big Helmet Heroes", "0142. Big Helmet Heroes.jpg"],
+  ["Bigfoots Journey", "0143. Bigfoots Journey.jpg"],
+  ["BIOHAZARD RE 4", "0144. BIOHAZARD RE 4.jpg"],
+  ["Biomutant", "0145. Biomutant.jpg"],
+  ["Bionic Bay", "0146. Bionic Bay.jpg"],
+  ["Biped", "0147. Biped.jpg"],
+  ["Biped 2", "0148. Biped 2.jpg"],
+  ["Black Myth Wukong", "0149. Black Myth Wukong.jpg"],
+  ["Blacksad Under The Skin", "0150. Blacksad Under The Skin.jpg"],
+  ["Blackwind", "0151. Blackwind.jpg"],
+  ["Blades of Fire", "0152. Blades of Fire.jpg"],
+  ["Blasphemous 2", "0153. Blasphemous 2.jpg"],
+  ["BlazBlue Entropy Effect X", "0154. BlazBlue Entropy Effect X.jpg"],
+  ["Blazing Strike", "0155. Blazing Strike.jpg"],
+  ["BLEACH Rebirth of Souls", "0156. BLEACH Rebirth of Souls.jpg"],
+  ["Bleak Dystopia", "0157. Bleak Dystopia.jpg"],
+  ["Bleak Faith Forsaken", "0158. Bleak Faith Forsaken.jpg"],
+  ["Blood Bowl 3", "0159. Blood Bowl 3.jpg"],
+  ["Blood Omen Legacy of Kain", "0160. Blood Omen Legacy of Kain.jpg"],
+  ["BloodRayne 2 ReVamped", "0161. BloodRayne 2 ReVamped.jpg"],
+  ["BloodRayne Betrayal Fresh Bites", "0162. BloodRayne Betrayal Fresh Bites.jpg"],
+  ["BloodRayne ReVamped", "0163. BloodRayne ReVamped.jpg"],
+  ["Bloodwash", "0164. Bloodwash.jpg"],
+  ["Blue Prince", "0165. Blue Prince.jpg"],
+  ["BLUE REFLECTION Quartet", "0166. BLUE REFLECTION Quartet.jpg"],
+  ["Bones of Halloween", "0167. Bones of Halloween.jpg"],
+  ["Borderlands 3 Ultimate Edition", "0168. Borderlands 3 Ultimate Edition.jpg"],
+  ["Borderlands 4", "0169. Borderlands 4.jpg"],
+  ["Born of Bread", "0170. Born of Bread.jpg"],
+  ["Bot Gaiden", "0171. Bot Gaiden.jpg"],
+  ["Boti Byteland Overclocked", "0172. Boti Byteland Overclocked.jpg"],
+  ["Bramble The Mountain King", "0173. Bramble The Mountain King.jpg"],
+  ["Breathedge", "0174. Breathedge.jpg"],
+  ["Brigandine Abyss", "0175. Brigandine Abyss.jpg"],
+  ["Broken Sword Shadow of The Templars Reforged", "0176. Broken Sword Shadow of The Templars Reforged.jpg"],
+  ["Brothers A Tale of Two Sons Remake", "0177. Brothers A Tale of Two Sons Remake.jpg"],
+  ["BUBBLE BOBBLE Sugar Dungeons", "0178. BUBBLE BOBBLE Sugar Dungeons.jpg"],
+  ["Bud Spencer Terence Hill Slaps And Beans 2", "0179. Bud Spencer Terence Hill Slaps And Beans 2.jpg"],
+  ["Bugsnax", "0180. Bugsnax.jpg"],
+  ["Bum Simulator", "0181. Bum Simulator.jpg"],
+  ["Burnhouse Lane", "0182. Burnhouse Lane.jpg"],
+  ["Bye Sweet Carole", "0183. Bye Sweet Carole.jpg"],
+  ["Cairn", "0184. Cairn.jpg"],
+  ["Call of Duty Black Ops", "0185. Call of Duty Black Ops.jpg"],
+  ["Call of Duty Black Ops 2", "0186. Call of Duty Black Ops 2.jpg"],
+  ["Call of Duty Black Ops Cold War", "0187. Call of Duty Black Ops Cold War.jpg"],
+  ["Call of Duty Modern Warfare 2", "0188. Call of Duty Modern Warfare 2.jpg"],
+  ["Call of Duty Modern Warfare 3", "0189. Call of Duty Modern Warfare 3.jpg"],
+  ["Call of Duty Vanguard", "0190. Call of Duty Vanguard.jpg"],
+  ["Call of The Sea", "0191. Call of The Sea.jpg"],
+  ["Cannibal Abduction", "0192. Cannibal Abduction.jpg"],
+  ["Cant Drive This", "0193. Cant Drive This.jpg"],
+  ["Captain Blood", "0194. Captain Blood.jpg"],
+  ["Captain Tsubasa 2 World Fighters", "0195. Captain Tsubasa 2 World Fighters.jpg"],
+  ["Card en Ciel", "0196. Card en Ciel.jpg"],
+  ["Caretaker", "0197. Caretaker.jpg"],
+  ["Carmen Sandiego Deluxe Edition", "0198. Carmen Sandiego Deluxe Edition.jpg"],
+  ["CarX Street", "0199. CarX Street.jpg"],
+  ["Castlevania Belmonts Curse", "0200. Castlevania Belmonts Curse.jpg"],
+  ["Castlevania Dominus Collection", "0201. Castlevania Dominus Collection.jpg"],
+  ["Cat Ping Pong", "0202. Cat Ping Pong.jpg"],
+  ["Cat Quest 3", "0203. Cat Quest 3.jpg"],
+  ["Cave Digger 2 Dig Harder", "0204. Cave Digger 2 Dig Harder.jpg"],
+  ["Cazzarion Dart Wheel", "0205. Cazzarion Dart Wheel.jpg"],
+  ["Cazzarion Hell Biker", "0206. Cazzarion Hell Biker.jpg"],
+  ["Cazzarion UFO Kidnapping", "0207. Cazzarion UFO Kidnapping.jpg"],
+  ["Charlie The Roach", "0208. Charlie The Roach.jpg"],
+  ["Charons Staircase", "0209. Charons Staircase.jpg"],
+  ["Chasing Static", "0210. Chasing Static.jpg"],
+  ["Chernobylite", "0211. Chernobylite.jpg"],
+  ["Choo Choo Charles", "0212. Choo Choo Charles.jpg"],
+  ["Christmas Massacre", "0213. Christmas Massacre.jpg"],
+  ["Christmas Mutilator", "0214. Christmas Mutilator.jpg"],
+  ["Cities VR Enhanced Edition", "0215. Cities VR Enhanced Edition.jpg"],
+  ["Cladun X3", "0216. Cladun X3.jpg"],
+  ["Clair Obscur Expedition 33", "0217. Clair Obscur Expedition 33.jpg"],
+  ["Clash Artifacts of Chaos", "0218. Clash Artifacts of Chaos.jpg"],
+  ["Class of Heroes 3 Remaster", "0219. Class of Heroes 3 Remaster.jpg"],
+  ["Clive Barkers Hellraiser Revival Deluxe Edition", "0220. Clive Barkers Hellraiser Revival Deluxe Edition.jpg"],
+  ["Clive N Wrench", "Clive N Wrench.jpg"],
+  ["Cloudberry Kingdom", "0221. Cloudberry Kingdom.jpg"],
+  ["Cobra Kai 2 Dojos Rising", "0222. Cobra Kai 2 Dojos Rising.jpg"],
+  ["Cocoon", "0223. Cocoon.jpg"],
+  ["CODE VEIN 2", "0224. CODE VEIN 2.jpg"],
+  ["Code Violet", "0225. Code Violet.jpg"],
+  ["Coffee Talk", "0226. Coffee Talk.jpg"],
+  ["Coffee Talk Episode 2 Hibiscus and Butterfly", "0227. Coffee Talk Episode 2 Hibiscus and Butterfly.jpg"],
+  ["Commandos Origins", "0228. Commandos Origins.jpg"],
+  ["Construction Simulator Gold Edition", "0229. Construction Simulator Gold Edition.jpg"],
+  ["Contra Operation Galuga", "0230. Contra Operation Galuga.jpg"],
+  ["Contraptions Collection", "0231. Contraptions Collection.jpg"],
+  ["CONTROL Resonant", "0232. CONTROL Resonant.jpg"],
+  ["Control Ultimate Edition", "0233. Control Ultimate Edition.jpg"],
+  ["Cookie Clicker", "0234. Cookie Clicker.jpg"],
+  ["Cookie Cutter", "0235. Cookie Cutter.jpg"],
+  ["Cool Boarders", "0236. Cool Boarders.jpg"],
+  ["Coral Island", "0237. Coral Island.jpg"],
+  ["Crash Bandicoot 4 Its About Time", "0238. Crash Bandicoot 4 Its About Time.jpg"],
+  ["Crazy Chicken Shooter Bundle", "0239. Crazy Chicken Shooter Bundle.jpg"],
+  ["Cricket 24", "0240. Cricket 24.jpg"],
+  ["Crime Boss Rockay City", "0241. Crime Boss Rockay City.jpg"],
+  ["Crimson Desert", "0242. Crimson Desert.jpg"],
+  ["Crimson Spires", "0243. Crimson Spires.jpg"],
+  ["Cris Tales", "0244. Cris Tales.jpg"],
+  ["Crisis Core Final Fantasy VII Reunion", "0245. Crisis Core Final Fantasy VII Reunion.jpg"],
+  ["Crisol Theater of Idols", "0246. Crisol Theater of Idols.jpg"],
+  ["Cronos The New Dawn", "0247. Cronos The New Dawn.jpg"],
+  ["Crossfire Sierra Squad", "0248. Crossfire Sierra Squad.jpg"],
+  ["Crow Country", "0249. Crow Country.jpg"],
+  ["Crown Wars The Black Prince", "0250. Crown Wars The Black Prince.jpg"],
+  ["Crusader Kings 3", "0251. Crusader Kings 3.jpg"],
+  ["Crymachina", "0252. Crymachina.jpg"],
+  ["CRYSTAR", "0253. CRYSTAR.jpg"],
+  ["Cthulhu Saves Christmas", "0254. Cthulhu Saves Christmas.jpg"],
+  ["Cult Of The Lamb", "0255. Cult Of The Lamb.jpg"],
+  ["Cursed Feed", "0256. Cursed Feed.jpg"],
+  ["Curved Space", "0257. Curved Space.jpg"],
+  ["Custom Mech Wars Ultimate Edition", "0258. Custom Mech Wars Ultimate Edition.jpg"],
+  ["Cyberpunk 2077 Ultimate Edition", "0259. Cyberpunk 2077 Ultimate Edition.jpg"],
+  ["Cygni All Guns Blazing", "0260. Cygni All Guns Blazing.jpg"],
+  ["Daemon X Machina Titanic Scion", "0261. Daemon X Machina Titanic Scion.jpg"],
+  ["Dakar Desert Rally", "0262. Dakar Desert Rally.jpg"],
+  ["DANJIGOKU", "0263. DANJIGOKU.jpg"],
+  ["Darkest Dungeon 2", "0264. Darkest Dungeon 2.jpg"],
+  ["Darksiders 2 Deathinitive Edition", "0265. Darksiders 2 Deathinitive Edition.jpg"],
+  ["Darksiders Warmastered Edition", "0266. Darksiders Warmastered Edition.jpg"],
+  ["Darwins Paradox", "0267. Darwins Paradox.jpg"],
+  ["Dave The Diver", "0268. Dave The Diver.jpg"],
+  ["Daxter", "0269. Daxter.jpg"],
+  ["Daymare 1994 Sandcastle", "0270. Daymare 1994 Sandcastle.jpg"],
+  ["Days Gone Remastered", "0271. Days Gone Remastered.jpg"],
+  ["Dead Cells", "0272. Dead Cells.jpg"],
+  ["Dead Island 2 Ultimate Edition", "0273. Dead Island 2 Ultimate Edition.jpg"],
+  ["Dead of Darkness", "0274. Dead of Darkness.jpg"],
+  ["Dead Rising Deluxe Remaster", "0275. Dead Rising Deluxe Remaster.jpg"],
+  ["Dead Space", "0276. Dead Space.jpg"],
+  ["DEADCRAFT", "0277. DEADCRAFT.jpg"],
+  ["Deadzone Rogue", "0278. Deadzone Rogue.jpg"],
+  ["Death Howl", "0279. Death Howl.jpg"],
+  ["Death Motel", "0280. Death Motel.jpg"],
+  ["Death or Treat", "0281. Death or Treat.jpg"],
+  ["Death Stranding 2 On The Beach", "0282. Death Stranding 2 On The Beach.jpg"],
+  ["Death Stranding Directors Cut", "0283. Death Stranding Directors Cut.jpg"],
+  ["DEATHLOOP Deluxe Edition", "0284. DEATHLOOP Deluxe Edition.jpg"],
+  ["Deaths Door", "0285. Deaths Door.jpg"],
+  ["Deathwish Enforcers", "0286. Deathwish Enforcers.jpg"],
+  ["Deep Rock Galactic", "0287. Deep Rock Galactic.jpg"],
+  ["Deliver At All Costs", "0288. Deliver At All Costs.jpg"],
+  ["Demeo", "Demeo.jpg"],
+  ["Delivery Driver Massacre", "0289. Delivery Driver Massacre.jpg"],
+  ["Demon Slayer Kimetsu no Yaiba Sweep The Board", "0290. Demon Slayer Kimetsu no Yaiba Sweep The Board.jpg"],
+  ["Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles", "0291. Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles.jpg"],
+  ["Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles 2", "0292. Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles 2.jpg"],
+  ["Demoniaca Everlasting Night", "0293. Demoniaca Everlasting Night.jpg"],
+  ["Demons Souls", "0294. Demons Souls.jpg"],
+  ["Denshattack", "0295. Denshattack.jpg"],
+  ["Destroy All Humans 2 Reprobed", "0296. Destroy All Humans 2 Reprobed.jpg"],
+  ["Destruction AllStars", "0297. Destruction AllStars.jpg"],
+  ["Deus Ex The Conspiracy", "0298. Deus Ex The Conspiracy.jpg"],
+  ["Devil May Cry 5 Special Edition", "0299. Devil May Cry 5 Special Edition.jpg"],
+  ["Diablo 2 Resurrected Infernal Edition", "0300. Diablo 2 Resurrected Infernal Edition.jpg"],
+  ["Digimon Story Time Stranger", "0301. Digimon Story Time Stranger.jpg"],
+  ["Dino Crisis", "0302. Dino Crisis.jpg"],
+  ["Directive 8020 Deluxe Edition", "0303. Directive 8020 Deluxe Edition.jpg"],
+  ["DIRT 5", "0304. DIRT 5.jpg"],
+  ["Disciples Liberation", "0305. Disciples Liberation.jpg"],
+  ["Disgaea 6 Complete", "0306. Disgaea 6 Complete.jpg"],
+  ["Disgaea 7 Vows of The Virtueless", "0307. Disgaea 7 Vows of The Virtueless.jpg"],
+  ["Disney Epic Mickey Rebrushed", "0308. Disney Epic Mickey Rebrushed.jpg"],
+  ["Disney Illusion Island Starring Mickey and Friends", "0309. Disney Illusion Island Starring Mickey and Friends.jpg"],
+  ["Disney Pixar Buzz Lightyear of Star Command", "0310. Disney Pixar Buzz Lightyear of Star Command.jpg"],
+  ["Disney Pixar Toy Story 2 Buzz Lightyear to the Rescue", "0311. Disney Pixar Toy Story 2 Buzz Lightyear to the Rescue.jpg"],
+  ["Disney Pixar Up", "0312. Disney Pixar Up.jpg"],
+  ["Disney Pixar WALL E", "0313. Disney Pixar WALL E.jpg"],
+  ["Disneys Atlantis The Lost Empire", "0314. Disneys Atlantis The Lost Empire.jpg"],
+  ["Dispatch", "0315. Dispatch.jpg"],
+  ["Divinity Original Sin 2 Definitive Edition", "0316. Divinity Original Sin 2 Definitive Edition.jpg"],
+  ["DNF Duel", "0317. DNF Duel.jpg"],
+  ["Do Not Open", "0318. Do Not Open.jpg"],
+  ["Doki Doki Literature Club Plus", "0319. Doki Doki Literature Club Plus.jpg"],
+  ["Dollhouse Behind The Broken Mirror", "0320. Dollhouse Behind The Broken Mirror.jpg"],
+  ["DOLMEN", "0321. DOLMEN.jpg"],
+  ["Dolphin Spirit Ocean Mission", "0322. Dolphin Spirit Ocean Mission.jpg"],
+  ["Dont Starve Together Console Edition", "0323. Dont Starve Together Console Edition.jpg"],
+  ["Dont Touch This Button", "0324. Dont Touch This Button.jpg"],
+  ["DOOM + DOOM II", "0325. DOOM + DOOM II.jpg"],
+  ["DOOM Eternal", "0326. DOOM Eternal.jpg"],
+  ["DOOM The Dark Ages", "0327. DOOM The Dark Ages.jpg"],
+  ["Doraemon Story OF Seasons Friends of The Great Kingdom", "0328. Doraemon Story OF Seasons Friends of The Great Kingdom.jpg"],
+  ["Double Dragon Gaiden Rise of The Dragons", "0329. Double Dragon Gaiden Rise of The Dragons.jpg"],
+  ["Double Dragon Revive", "0330. Double Dragon Revive.jpg"],
+  ["Draculas Legacy Remastered", "0331. Draculas Legacy Remastered.jpg"],
+  ["Dragon Age The Veilguard", "0332. Dragon Age The Veilguard.jpg"],
+  ["Dragon Ball Fighter Z", "0333. Dragon Ball Fighter Z.jpg"],
+  ["Dragon Ball Sparking Zero", "0334. Dragon Ball Sparking Zero.jpg"],
+  ["Dragon Ball Xenoverse 2", "0335. Dragon Ball Xenoverse 2.jpg"],
+  ["Dragon Ball Z Kakarot", "0336. Dragon Ball Z Kakarot.jpg"],
+  ["Dragon Quest I and II HD 2D Remake", "0337. Dragon Quest I and II HD 2D Remake.jpg"],
+  ["Dragon Quest III HD 2D Remake", "0338. Dragon Quest III HD 2D Remake.jpg"],
+  ["Dragon Quest VII Reimagined", "0339. Dragon Quest VII Reimagined.jpg"],
+  ["Dragon Quest X Offline", "0340. Dragon Quest X Offline.jpg"],
+  ["Dragons Dogma 2", "0341. Dragons Dogma 2.jpg"],
+  ["Dreamcore", "0342. Dreamcore.jpg"],
+  ["Dreaming Sarah", "0343. Dreaming Sarah.jpg"],
+  ["DreamWorks All Star Kart Racing", "0344. DreamWorks All Star Kart Racing.jpg"],
+  ["DREDGE", "0345. DREDGE.jpg"],
+  ["Drowning", "0346. Drowning.jpg"],
+  ["Drums Rock", "0347. Drums Rock.jpg"],
+  ["Drunken Fist", "0348. Drunken Fist.jpg"],
+  ["Drunken Fist 2 Zombie Hangover", "0349. Drunken Fist 2 Zombie Hangover.jpg"],
+  ["Dungeons 4", "0350. Dungeons 4.jpg"],
+  ["Dungeons Dragons Dark Alliance", "0351. Dungeons Dragons Dark Alliance.jpg"],
+  ["Dungeons of Sundaria", "0352. Dungeons of Sundaria.jpg"],
+  ["Dusk Diver 2", "0353. Dusk Diver 2.jpg"],
+  ["Duskfade", "0354. Duskfade.jpg"],
+  ["Dying Light 2 Stay Human", "0355. Dying Light 2 Stay Human.jpg"],
+  ["Dying Light The Beast", "0356. Dying Light The Beast.jpg"],
+  ["DYNASTY WARRIORS 3 Complete Edition Remastered", "0357. DYNASTY WARRIORS 3 Complete Edition Remastered.jpg"],
+  ["Dynasty Warriors Origins", "0358. Dynasty Warriors Origins.jpg"],
+  ["EA Sports College Football 25", "0359. EA Sports College Football 25.jpg"],
+  ["EA Sports College Football 26", "0360. EA Sports College Football 26.jpg"],
+  ["EA SPORTS FC 24", "0361. EA SPORTS FC 24.jpg"],
+  ["EA Sports FC 25", "0362. EA Sports FC 25.jpg"],
+  ["EA SPORTS FC 26", "0363. EA SPORTS FC 26.jpg"],
+  ["EA SPORTS FC 27", "0364. EA SPORTS FC 27.jpg"],
+  ["EA Sports PGA Tour", "0365. EA Sports PGA Tour.jpg"],
+  ["EA Sports UFC 5", "0366. EA Sports UFC 5.jpg"],
+  ["EA Sports UFC 6", "0367. EA Sports UFC 6.jpg"],
+  ["EA Sports WRC", "0368. EA Sports WRC.jpg"],
+  ["Earth Defense Force World Brothers 2", "0369. Earth Defense Force World Brothers 2.jpg"],
+  ["Earthion", "0370. Earthion.jpg"],
+  ["eBaseball PRO SPIRIT 2026", "0371. eBaseball PRO SPIRIT 2026.jpg"],
+  ["Echoes of Aincrad", "0372. Echoes of Aincrad.jpg"],
+  ["Echoes of The End", "0373. Echoes of The End.jpg"],
+  ["Ed 0 Zombie Uprising", "0374. Ed 0 Zombie Uprising.jpg"],
+  ["EDENS ZERO", "0375. EDENS ZERO.jpg"],
+  ["eFootball", "0376. eFootball.jpg"],
+  ["Elden Ring", "0377. Elden Ring.jpg"],
+  ["Elden Ring Nightreign", "0378. Elden Ring Nightreign.jpg"],
+  ["Electronics Puzzle Lab", "0379. Electronics Puzzle Lab.jpg"],
+  ["Elex 2", "0380. Elex 2.jpg"],
+  ["Empire of The Ants", "0381. Empire of The Ants.jpg"],
+  ["Enchanted Portals", "0382. Enchanted Portals.jpg"],
+  ["ENDLESS Dungeon", "0383. ENDLESS Dungeon.jpg"],
+  ["Endling Extinction is Forever", "0384. Endling Extinction is Forever.jpg"],
+  ["Enotria The Last Song Deluxe Edition", "0385. Enotria The Last Song Deluxe Edition.jpg"],
+  ["Enter Digiton Heart of Corruption", "0386. Enter Digiton Heart of Corruption.jpg"],
+  ["Eriksholm The Stolen Dream", "0387. Eriksholm The Stolen Dream.jpg"],
+  ["Escape The Glitch 2 Backrooms", "0388. Escape The Glitch 2 Backrooms.jpg"],
+  ["Eternights", "0389. Eternights.jpg"],
+  ["Ever Forward", "0390. Ever Forward.jpg"],
+  ["Evergate", "0391. Evergate.jpg"],
+  ["Everlune", "0392. Everlune.jpg"],
+  ["Everspace 2", "0393. Everspace 2.jpg"],
+  ["Everybodys Golf Hot Shots", "0394. Everybodys Golf Hot Shots.jpg"],
+  ["Evil Genius 2 World Domination", "0395. Evil Genius 2 World Domination.jpg"],
+  ["Evil Inside", "0396. Evil Inside.jpg"],
+  ["Evil West", "0397. Evil West.jpg"],
+  ["Evotinction", "0398. Evotinction.jpg"],
+  ["EXODEMON", "0399. EXODEMON.jpg"],
+  ["Expeditions A Mudrunner Game", "0400. Expeditions A Mudrunner Game.jpg"],
+  ["F1 2021", "0401. F1 2021.jpg"],
+  ["F1 22 Championship Edition", "0402. F1 22 Championship Edition.jpg"],
+  ["F1 23", "0403. F1 23.jpg"],
+  ["F1 24", "0404. F1 24.jpg"],
+  ["F1 25", "0405. F1 25.jpg"],
+  ["Fairy Fencer F Refrain Chord", "0406. Fairy Fencer F Refrain Chord.jpg"],
+  ["FAIRY TAIL 2", "0407. FAIRY TAIL 2.jpg"],
+  ["Fallen Legion Rise to Glory", "0408. Fallen Legion Rise to Glory.jpg"],
+  ["Fallout 4", "0409. Fallout 4.jpg"],
+  ["FANTASIAN Neo Dimension", "0410. FANTASIAN Neo Dimension.jpg"],
+  ["Fantasy Life i The Girl Who Steals Time", "0411. Fantasy Life i The Girl Who Steals Time.jpg"],
+  ["FAR Changing Tides", "0412. FAR Changing Tides.jpg"],
+  ["Far Cry 6", "0413. Far Cry 6.jpg"],
+  ["Farming Simulator 22", "0414. Farming Simulator 22.jpg"],
+  ["Farming Simulator 25", "0415. Farming Simulator 25.jpg"],
+  ["Fast and Furious Arcade Edition", "0416. Fast and Furious Arcade Edition.jpg"],
+  ["FATAL FRAME / PROJECT ZERO Maiden of Black Water", "0417. FATAL FRAME PROJECT ZERO Maiden of Black Water.jpg"],
+  ["FATAL FRAME / PROJECT ZERO Mask of The Lunar Eclipse", "0418. FATAL FRAME PROJECT ZERO Mask of The Lunar Eclipse.jpg"],
+  ["Fatal Frame 2 Crimson Butterfly Remake", "0419. Fatal Frame 2 Crimson Butterfly Remake.jpg"],
+  ["FATAL FURY City of The Wolves", "0420. FATAL FURY City of The Wolves.jpg"],
+  ["FateSamurai Remnant", "0421. FateSamurai Remnant.jpg"],
+  ["Fear Effect", "0422. Fear Effect.jpg"],
+  ["Fearmonium", "0423. Fearmonium.jpg"],
+  ["FIFA 21", "0424. FIFA 21.jpg"],
+  ["FIFA 22", "0425. FIFA 22.jpg"],
+  ["FIFA 23", "0426. FIFA 23.jpg"],
+  ["FightN Rage", "FightN Rage.jpg"],
+  ["Fighting Force Collection", "0427. Fighting Force Collection.jpg"],
+  ["Figment 2 Creed Valley", "0428. Figment 2 Creed Valley.jpg"],
+  ["FINAL FANTASY RESONANCE Deluxe Edition", "0429. FINAL FANTASY RESONANCE Deluxe Edition.jpg"],
+  ["FINAL FANTASY TACTICS The Ivalice Chronicles", "0430. FINAL FANTASY TACTICS The Ivalice Chronicles.jpg"],
+  ["Final Fantasy VII Rebirth", "0431. Final Fantasy VII Rebirth.jpg"],
+  ["Final Fantasy VII Remake Intergrade", "0432. Final Fantasy VII Remake Intergrade.jpg"],
+  ["Final Fantasy XVI", "0433. Final Fantasy XVI.jpg"],
+  ["Final Vendetta", "0434. Final Vendetta.jpg"],
+  ["Finding Frankie", "0435. Finding Frankie.jpg"],
+  ["Firefighting Simulator Ignite", "0436. Firefighting Simulator Ignite.jpg"],
+  ["Firmament", "0437. Firmament.jpg"],
+  ["Fishing North Atlantic Enhanced Edition", "0438. Fishing North Atlantic Enhanced Edition.jpg"],
+  ["FIST Forged In Shadow Torch", "0439. FIST Forged In Shadow Torch.jpg"],
+  ["Five Nights at Freddys Help Wanted 2", "0440. Five Nights at Freddys Help Wanted 2.jpg"],
+  ["Five Nights at Freddys Help Wanted Full Time Edition", "0441. Five Nights at Freddys Help Wanted Full Time Edition.jpg"],
+  ["Five Nights at Freddys Into The Pit", "0442. Five Nights at Freddys Into The Pit.jpg"],
+  ["Five Nights at Freddys Secret of The Mimic", "0443. Five Nights at Freddys Secret of The Mimic.jpg"],
+  ["Five Nights at Freddys Security Breach", "0444. Five Nights at Freddys Security Breach.jpg"],
+  ["Flashback 2", "0445. Flashback 2.jpg"],
+  ["Flintlock The Siege of Dawn", "0446. Flintlock The Siege of Dawn.jpg"],
+  ["Fobia St Dinfna Hotel", "0447. Fobia St Dinfna Hotel.jpg"],
+  ["Food Boy", "0448. Food Boy.jpg"],
+  ["Football Manager 26 Console Edition", "0449. Football Manager 26 Console Edition.jpg"],
+  ["For The King 2", "0450. For The King 2.jpg"],
+  ["Foreclosed", "0451. Foreclosed.jpg"],
+  ["Forest Grove", "0452. Forest Grove.jpg"],
+  ["Forever Skies", "0453. Forever Skies.jpg"],
+  ["Forgive Me Father 2", "0454. Forgive Me Father 2.jpg"],
+  ["Formula Retro Racing World Tour Special Edition", "0455. Formula Retro Racing World Tour Special Edition.jpg"],
+  ["Forspoken", "0456. Forspoken.jpg"],
+  ["Fort Solis", "0457. Fort Solis.jpg"],
+  ["Forward To The Sky", "0458. Forward To The Sky.jpg"],
+  ["Forza Horizon 5", "0459. Forza Horizon 5.jpg"],
+  ["FPV Simulator", "0460. FPV Simulator.jpg"],
+  ["Freddy Spaghetti", "0461. Freddy Spaghetti.jpg"],
+  ["Freddy Spaghetti 2", "0462. Freddy Spaghetti 2.jpg"],
+  ["Frightence", "0463. Frightence.jpg"],
+  ["Front Mission 1st Remake", "0464. Front Mission 1st Remake.jpg"],
+  ["Frontier Hunter Erzas Wheel of Fortune", "0465. Frontier Hunter Erzas Wheel of Fortune.jpg"],
+  ["Frostpunk 2", "0466. Frostpunk 2.jpg"],
+  ["Fuga Melodies of Steel", "0467. Fuga Melodies of Steel.jpg"],
+  ["Fuga Melodies of Steel 2", "0468. Fuga Melodies of Steel 2.jpg"],
+  ["Fuga Melodies of Steel 3", "0469. Fuga Melodies of Steel 3.jpg"],
+  ["Funko Fusion", "0470. Funko Fusion.jpg"],
+  ["Funtasia", "0471. Funtasia.jpg"],
+  ["Fur Squadron", "0472. Fur Squadron.jpg"],
+  ["Furi", "0473. Furi.jpg"],
+  ["G Police", "0474. G Police.jpg"],
+  ["Gamedec Definitive Edition", "0475. Gamedec Definitive Edition.jpg"],
+  ["Gangs of Sherwood", "0476. Gangs of Sherwood.jpg"],
+  ["Garfield Kart 2 All You Can Drift", "0477. Garfield Kart 2 All You Can Drift.jpg"],
+  ["Garten of Banban", "0478. Garten of Banban.jpg"],
+  ["Garten of Banban 2", "0479. Garten of Banban 2.jpg"],
+  ["Gear Club Unlimited 2 Ultimate Edition", "0480. Gear Club Unlimited 2 Ultimate Edition.jpg"],
+  ["Gears of War Reloaded", "0481. Gears of War Reloaded.jpg"],
+  ["Gex Trilogy", "0482. Gex Trilogy.jpg"],
+  ["Ghost Master Resurrection", "0483. Ghost Master Resurrection.jpg"],
+  ["Ghost of Tsushima Directors Cut", "0484. Ghost of Tsushima Directors Cut.jpg"],
+  ["Ghost of Yōtei", "0485. Ghost of Yōtei.jpg"],
+  ["Ghost Signal A Stellaris Game", "0486. Ghost Signal A Stellaris Game.jpg"],
+  ["Ghost Song", "0487. Ghost Song.jpg"],
+  ["Ghostbusters Spirits Unleashed", "0488. Ghostbusters Spirits Unleashed.jpg"],
+  ["Ghosthunter", "0489. Ghosthunter.jpg"],
+  ["Ghostrunner", "0490. Ghostrunner.jpg"],
+  ["Ghostrunner 2", "0491. Ghostrunner 2.jpg"],
+  ["Ghostwire Tokyo", "0492. Ghostwire Tokyo.jpg"],
+  ["GigaBash", "0493. GigaBash.jpg"],
+  ["Gigantosaurus Dino Kart", "0494. Gigantosaurus Dino Kart.jpg"],
+  ["Gloomy Eyes", "0495. Gloomy Eyes.jpg"],
+  ["GNOSIA", "0496. GNOSIA.jpg"],
+  ["Goat Simulator 3", "0497. Goat Simulator 3.jpg"],
+  ["GOBBLE", "0498. GOBBLE.jpg"],
+  ["God bless or Goddess", "0499. God bless or Goddess.jpg"],
+  ["God Damn The Garden", "0500. God Damn The Garden.jpg"],
+  ["God of Rock", "0501. God of Rock.jpg"],
+  ["God Of War Ragnarok", "0502. God Of War Ragnarok.jpg"],
+  ["God of War Sons of Sparta", "0503. God of War Sons of Sparta.jpg"],
+  ["GODS EATER BURST", "0504. GODS EATER BURST.jpg"],
+  ["Godzilla Destroy All Monsters Melee Remastered", "0505. Godzilla Destroy All Monsters Melee Remastered.jpg"],
+  ["Golfing Over It With Alva Majo", "0506. Golfing Over It With Alva Majo.jpg"],
+  ["Goodnight Universe", "0507. Goodnight Universe.jpg"],
+  ["Goosebumps Terror in Little Creek", "0508. Goosebumps Terror in Little Creek.jpg"],
+  ["Gori Cuddly Carnage", "0509. Gori Cuddly Carnage.jpg"],
+  ["Gotham Knights", "0510. Gotham Knights.jpg"],
+  ["Gothic 1 Remake", "0511. Gothic 1 Remake.jpg"],
+  ["Gothic 2 Complete Classic", "0512. Gothic 2 Complete Classic.jpg"],
+  ["Gothic Classic", "0513. Gothic Classic.jpg"],
+  ["Gran Turismo 7", "0514. Gran Turismo 7.jpg"],
+  ["Granblue Fantasy Relink", "0515. Granblue Fantasy Relink.jpg"],
+  ["Granblue Fantasy Versus Rising", "0516. Granblue Fantasy Versus Rising.jpg"],
+  ["Grand Theft Auto III The Definitive Edition", "0517. Grand Theft Auto III The Definitive Edition.jpg"],
+  ["Grand Theft Auto San Andreas The Definitive Edition", "0518. Grand Theft Auto San Andreas The Definitive Edition.jpg"],
+  ["Grand Theft Auto The Trilogy The Definitive Edition", "0519. Grand Theft Auto The Trilogy The Definitive Edition.jpg"],
+  ["Grand Theft Auto V", "0520. Grand Theft Auto V.jpg"],
+  ["Grand Theft Auto VI - COMINGSOON..!!!", "Grand Theft Auto VI.jpg"],
+  ["Grand Theft Auto Vice City The Definitive Edition", "0521. Grand Theft Auto Vice City The Definitive Edition.jpg"],
+  ["Graven", "0522. Graven.jpg"],
+  ["Graveyard Keeper 2", "0523. Graveyard Keeper 2.jpg"],
+  ["Gravity Crash Portable", "0524. Gravity Crash Portable.jpg"],
+  ["Gray Dawn", "0525. Gray Dawn.jpg"],
+  ["Greak Memories of Azur", "0526. Greak Memories of Azur.jpg"],
+  ["GreedFall Gold Edition", "0527. GreedFall Gold Edition.jpg"],
+  ["GreedFall The Dying World", "0528. GreedFall The Dying World.jpg"],
+  ["Green Hell VR", "0529. Green Hell VR.jpg"],
+  ["Greyhill Incident Abducted Edition", "0530. Greyhill Incident Abducted Edition.jpg"],
+  ["GRID Legends", "0531. GRID Legends.jpg"],
+  ["GrimGrimoire OnceMore", "0532. GrimGrimoire OnceMore.jpg"],
+  ["GRIS", "0533. GRIS.jpg"],
+  ["Grounded ", "Grounded.jpg"],
+  ["Guilty Gear Strive", "0534. Guilty Gear Strive.jpg"],
+  ["Guitar Hero 5 (Unofficial Port)", "0535. Guitar Hero 5 (Unofficial Port).jpg"],
+  ["Gundam Breaker 4", "0536. Gundam Breaker 4.jpg"],
+  ["Gungrave GORE", "0537. Gungrave GORE.jpg"],
+  ["Gunsmith Simulator", "0538. Gunsmith Simulator.jpg"],
+  ["GYLT", "0539. GYLT.jpg"],
+  ["Hades", "0540. Hades.jpg"],
+  ["Hades 2", "0541. Hades 2.jpg"],
+  ["Halloween The Game", "0542. Halloween The Game.jpg"],
+  ["Halo Campaign Evolved Premium Edition", "0543. Halo Campaign Evolved Premium Edition.jpg"],
+  ["Hamster Playground", "0544. Hamster Playground.jpg"],
+  ["Hannah VCR", "0545. Hannah VCR.jpg"],
+  ["HappyFunland", "0546. HappyFunland.jpg"],
+  ["Harmonys Odyssey", "0547. Harmonys Odyssey.jpg"],
+  ["Harvest Days", "0548. Harvest Days.jpg"],
+  ["Harvest Moon The Winds of Anthos Complete", "0549. Harvest Moon The Winds of Anthos Complete.jpg"],
+  ["HASTE", "0550. HASTE.jpg"],
+  ["Have A Nice Death", "0551. Have A Nice Death.jpg"],
+  ["Headbangers in Holiday Hell", "0552. Headbangers in Holiday Hell.jpg"],
+  ["Heavenly Bodies", "0553. Heavenly Bodies.jpg"],
+  ["Hell Is Us", "0554. Hell Is Us.jpg"],
+  ["Hell Well", "0555. Hell Well.jpg"],
+  ["Hellblade Senuas Sacrifice", "0556. Hellblade Senuas Sacrifice.jpg"],
+  ["Hellboy Web of Wyrd", "0557. Hellboy Web of Wyrd.jpg"],
+  ["Hello Kitty Island Adventure", "0558. Hello Kitty Island Adventure.jpg"],
+  ["Hello Neighbor", "0559. Hello Neighbor.jpg"],
+  ["Hello Neighbor 2", "0560. Hello Neighbor 2.jpg"],
+  ["Hentai vs Evil", "0561. Hentai vs Evil.jpg"],
+  ["Heretic + Hexen", "0562. Heretic + Hexen.jpg"],
+  ["Heroines Through My Lens", "0563. Heroines Through My Lens.jpg"],
+  ["Hi Fi RUSH Deluxe Edition", "0564. Hi Fi RUSH Deluxe Edition.jpg"],
+  ["High on Life", "0565. High on Life.jpg"],
+  ["High on Life 2", "0566. High on Life 2.jpg"],
+  ["Hitman World of Assassination", "0567. Hitman World of Assassination.jpg"],
+  ["HOA", "0568. HOA.jpg"],
+  ["Hogwarts Legacy", "0569. Hogwarts Legacy.jpg"],
+  ["Hollow Knight Silksong", "0570. Hollow Knight Silksong.jpg"],
+  ["Hollow Knight Voidheart Edition", "0571. Hollow Knight Voidheart Edition.jpg"],
+  ["Hollys Hunt", "0572. Hollys Hunt.jpg"],
+  ["Hoodie Survivor", "0573. Hoodie Survivor.jpg"],
+  ["Horizon Call of The Mountain", "0574. Horizon Call of The Mountain.jpg"],
+  ["Horizon Chase 2", "0575. Horizon Chase 2.jpg"],
+  ["Horizon Forbidden West Complete Edition", "0576. Horizon Forbidden West Complete Edition.jpg"],
+  ["Horizon Zero Dawn Remastered", "0577. Horizon Zero Dawn Remastered.jpg"],
+  ["Horror Pinball Bundle", "0578. Horror Pinball Bundle.jpg"],
+  ["Horror Tales The Beggar", "0579. Horror Tales The Beggar.jpg"],
+  ["Horror Tales The Wine", "0580. Horror Tales The Wine.jpg"],
+  ["Hot Blood", "0581. Hot Blood.jpg"],
+  ["Hot Shots Golf 2 (PS1)", "0582. Hot Shots Golf 2 (PS1).jpg"],
+  ["HOT WHEELS Infinite Rush Deluxe Edition", "0583. HOT WHEELS Infinite Rush Deluxe Edition.jpg"],
+  ["Hot Wheels Lets Race Ultimate Speed", "0584. Hot Wheels Lets Race Ultimate Speed.jpg"],
+  ["Hot Wheels Monster Trucks Stunt Mayhem", "0585. Hot Wheels Monster Trucks Stunt Mayhem.jpg"],
+  ["Hot Wheels Unleashed", "0586. Hot Wheels Unleashed.jpg"],
+  ["Hot Wheels Unleashed 2 Turbocharged", "0587. Hot Wheels Unleashed 2 Turbocharged.jpg"],
+  ["Hotel Barcelona", "0588. Hotel Barcelona.jpg"],
+  ["Hotline Miami", "0589. Hotline Miami.jpg"],
+  ["Hubris", "0590. Hubris.jpg"],
+  ["Human Fall Flat", "0591. Human Fall Flat.jpg"],
+  ["HUMANITY", "0592. HUMANITY.jpg"],
+  ["Humankind", "0593. Humankind.jpg"],
+  ["Hunting Simulator 2", "0594. Hunting Simulator 2.jpg"],
+  ["Hyperspace Neptunia Unlimited", "0595. Hyperspace Neptunia Unlimited.jpg"],
+  ["Hyperviolent", "0596. Hyperviolent.jpg"],
+  ["Ib", "0597. Ib.jpg"],
+  ["Ikai", "0598. Ikai.jpg"],
+  ["Immortals Fenyx Rising", "0599. Immortals Fenyx Rising.jpg"],
+  ["Immortals of Aveum", "0600. Immortals of Aveum.jpg"],
+  ["In Nightmare", "0601. In Nightmare.jpg"],
+  ["In Rays of The Light", "0602. In Rays of The Light.jpg"],
+  ["In Sound Mind", "0603. In Sound Mind.jpg"],
+  ["Inazuma Eleven Victory Road", "0604. Inazuma Eleven Victory Road.jpg"],
+  ["Indiana Jones and The Great Circle", "0605. Indiana Jones and The Great Circle.jpg"],
+  ["Indiana Jones and The Staff of Kings", "0606. Indiana Jones and The Staff of Kings.jpg"],
+  ["Indika", "0607. Indika.jpg"],
+  ["Industria", "0608. Industria.jpg"],
+  ["INFINI", "0609. INFINI.jpg"],
+  ["Infinity Strash DRAGON QUEST The Adventure of Dai", "0610. Infinity Strash DRAGON QUEST The Adventure of Dai.jpg"],
+  ["Infliction Extended Cut", "0611. Infliction Extended Cut.jpg"],
+  ["Inscryption", "0612. Inscryption.jpg"],
+  ["Insomnis", "0613. Insomnis.jpg"],
+  ["Instant Sports Plus", "0614. Instant Sports Plus.jpg"],
+  ["Invincible VS", "0615. Invincible VS.jpg"],
+  ["Iron Harvest Complete Edition", "0616. Iron Harvest Complete Edition.jpg"],
+  ["Iron Lung", "0617. Iron Lung.jpg"],
+  ["Is This Seat Taken?", "0618. Is This Seat Taken.jpg"],
+  ["It Takes Two", "0619. It Takes Two.jpg"],
+  ["Jack Holmes Master of Puppets", "0620. Jack Holmes Master of Puppets.jpg"],
+  ["Jagged Alliance 3", "0621. Jagged Alliance 3.jpg"],
+  ["Jak and Daxter The Lost Frontier", "0622. Jak and Daxter The Lost Frontier.jpg"],
+  ["Jak and Daxter The Precursor Legacy", "0623. Jak and Daxter The Precursor Legacy.jpg"],
+  ["Jay and Silent Bob Chronic Blunt Punch", "0624. Jay and Silent Bob Chronic Blunt Punch.jpg"],
+  ["Jeanne dArc", "0625. Jeanne dArc.jpg"],
+  ["Jet Kave Adventure", "0626. Jet Kave Adventure.jpg"],
+  ["Jet Moto / Jet Rider", "0627. Jet Moto+Jet Rider.jpg"],
+  ["Jet Rider 2", "0628. Jet Rider 2.jpg"],
+  ["Jets N Guns 2", "0629. Jets N Guns 2.jpg"],
+  ["Jitsu Squad", "0630. Jitsu Squad.jpg"],
+  ["Job Simulator", "0631. Job Simulator.jpg"],
+  ["JoJos Bizarre Adventure All Star Battle R", "0632. JoJos Bizarre Adventure All Star Battle R.jpg"],
+  ["Judgment", "0633. Judgment.jpg"],
+  ["Juicy Realm", "0634. Juicy Realm.jpg"],
+  ["Jumanji The Video Game", "0635. Jumanji The Video Game.jpg"],
+  ["Jumping Flash", "0636. Jumping Flash.jpg"],
+  ["Jurassic Park Classic Games Collection", "0637. Jurassic Park Classic Games Collection.jpg"],
+  ["Jurassic World Evolution 2 Premium Edition", "0638. Jurassic World Evolution 2 Premium Edition.jpg"],
+  ["Jurassic World Evolution 3", "0639. Jurassic World Evolution 3.jpg"],
+  ["Jusant", "0640. Jusant.jpg"],
+  ["KAGE Shadow of The Ninja", "0641. KAGE Shadow of The Ninja.jpg"],
+  ["KAKU Ancient Seal", "0642. KAKU Ancient Seal.jpg"],
+  ["KAMITSUBAKI CITY ENSEMBLE", "0643. KAMITSUBAKI CITY ENSEMBLE.jpg"],
+  ["Kao The Kangaroo", "0644. Kao The Kangaroo.jpg"],
+  ["KARMA The Dark World", "0645. KARMA The Dark World.jpg"],
+  ["Kena Bridge of Spirits", "0646. Kena Bridge of Spirits.jpg"],
+  ["Kerbal Space Program Enhanced Edition", "0647. Kerbal Space Program Enhanced Edition.jpg"],
+  ["Keylocker Turn Based Cyberpunk Action", "0648. Keylocker Turn Based Cyberpunk Action.jpg"],
+  ["KeyWe", "0649. KeyWe.jpg"],
+  ["Kid A Mnesia Exhibition", "0650. Kid A Mnesia Exhibition.jpg"],
+  ["Killing Floor 3", "0651. Killing Floor 3.jpg"],
+  ["Killzone Liberation", "0652. Killzone Liberation.jpg"],
+  ["Kingdom Come Deliverance 2", "0653. Kingdom Come Deliverance 2.jpg"],
+  ["KINGDOM HEARTS 3 + Re Mind", "0654. KINGDOM HEARTS 3 + Re Mind.jpg"],
+  ["KINGDOM HEARTS HD 1.5 + 2.5 ReMIX", "0655. KINGDOM HEARTS HD 1.5 + 2.5 ReMIX.jpg"],
+  ["KINGDOM HEARTS HD 2.8 Final Chapter Prologue", "0656. KINGDOM HEARTS HD 2.8 Final Chapter Prologue.jpg"],
+  ["Kings Bounty 2", "0657. Kings Bounty 2.jpg"],
+  ["Kitaria Fables", "0658. Kitaria Fables.jpg"],
+  ["Kitten Island", "0659. Kitten Island.jpg"],
+  ["Kizuna AI Touch The Beat", "0660. Kizuna AI Touch The Beat.jpg"],
+  ["KLONOA Phantasy Reverie Series", "0661. KLONOA Phantasy Reverie Series.jpg"],
+  ["Knightin’+", "0662. Knightin’+.jpg"],
+  ["Knowledge or know Lady", "0663. Knowledge or know Lady.jpg"],
+  ["Kong Survivor Instinct", "0664. Kong Survivor Instinct.jpg"],
+  ["Koumajou Remilia Scarlet Symphony", "0665. Koumajou Remilia Scarlet Symphony.jpg"],
+  ["Kunitsu Gami Path of The Goddess", "0666. Kunitsu Gami Path of The Goddess.jpg"],
+  ["Kusan City of Wolves", "0667. Kusan City of Wolves.jpg"],
+  ["KYOTO XANADU The Blooming Phantom", "0668. KYOTO XANADU The Blooming Phantom.jpg"],
+  ["Lady In A Leotard With A Gun", "0669. Lady In A Leotard With A Gun.jpg"],
+  ["Laika Aged Through Blood", "0670. Laika Aged Through Blood.jpg"],
+  ["LASSO CATCH", "0671. LASSO CATCH.jpg"],
+  ["Last Days of Lazarus", "0672. Last Days of Lazarus.jpg"],
+  ["Layers of Fear", "0673. Layers of Fear.jpg"],
+  ["Legacy of Kain Soul Reaver 1 and 2 Remastered", "0674. Legacy of Kain Soul Reaver 1 and 2 Remastered.jpg"],
+  ["LEGO 2K Drive", "0675. LEGO 2K Drive.jpg"],
+  ["LEGO Batman Legacy of The Dark Knight", "0676. LEGO Batman Legacy of The Dark Knight.jpg"],
+  ["LEGO Brawls", "0677. LEGO Brawls.jpg"],
+  ["LEGO Bricktales", "0678. LEGO Bricktales.jpg"],
+  ["LEGO Builders Journey", "0679. LEGO Builders Journey.jpg"],
+  ["LEGO Harry Potter Collection", "0680. LEGO Harry Potter Collection.jpg"],
+  ["LEGO Horizon Adventures", "0681. LEGO Horizon Adventures.jpg"],
+  ["LEGO Party", "0682. LEGO Party.jpg"],
+  ["LEGO Star Wars 2 The Original Trilogy", "0683. LEGO Star Wars 2 The Original Trilogy.jpg"],
+  ["LEGO Star Wars The Skywalker Saga", "0684. LEGO Star Wars The Skywalker Saga.jpg"],
+  ["LEGO Voyagers", "0685. LEGO Voyagers.jpg"],
+  ["Lets Build A Zoo", "0686. Lets Build A Zoo.jpg"],
+  ["Lies of P", "0687. Lies of P.jpg"],
+  ["Life is Strange Double Exposure", "0688. Life is Strange Double Exposure.jpg"],
+  ["Life is Strange Reunion", "0689. Life is Strange Reunion.jpg"],
+  ["Life is Strange True Colors", "0690. Life is Strange True Colors.jpg"],
+  ["Like A Dragon Gaiden The Man Who Erased His Name", "0691. Like A Dragon Gaiden The Man Who Erased His Name.jpg"],
+  ["Like a Dragon Infinite Wealth Ultimate Edition", "0692. Like a Dragon Infinite Wealth Ultimate Edition.jpg"],
+  ["Like A Dragon Ishin", "0693. Like A Dragon Ishin.jpg"],
+  ["Like A Dragon Pirate Yakuza in Hawaii", "0694. Like A Dragon Pirate Yakuza in Hawaii.jpg"],
+  ["Little Big Adventure Twinsens Quest", "0695. Little Big Adventure Twinsens Quest.jpg"],
+  ["Little Nightmares 2", "0696. Little Nightmares 2.jpg"],
+  ["Little Nightmares 3", "0697. Little Nightmares 3.jpg"],
+  ["Little Nightmares Enhanced Complete Edition", "0698. Little Nightmares Enhanced Complete Edition.jpg"],
+  ["LOL Surprise BBs Born to Travel", "0699. LOL Surprise BBs Born to Travel.jpg"],
+  ["Lollipop Chainsaw RePoP", "0700. Lollipop Chainsaw RePoP.jpg"],
+  ["Looney Tunes Wacky World of Sports", "0701. Looney Tunes Wacky World of Sports.jpg"],
+  ["Lords of The Fallen", "0702. Lords of The Fallen.jpg"],
+  ["Loretta", "0703. Loretta.jpg"],
+  ["Lost At Sea", "0704. Lost At Sea.jpg"],
+  ["Lost Ember Rekindled Edition", "0705. Lost Ember Rekindled Edition.jpg"],
+  ["Lost Epic", "0706. Lost Epic.jpg"],
+  ["Lost in Play", "0707. Lost in Play.jpg"],
+  ["Lost in Random", "0708. Lost in Random.jpg"],
+  ["Lost Judgment", "0709. Lost Judgment.jpg"],
+  ["Lost Records Bloom and Rage", "0710. Lost Records Bloom and Rage.jpg"],
+  ["Lost Ruins", "0711. Lost Ruins.jpg"],
+  ["Lost Soul Aside", "0712. Lost Soul Aside.jpg"],
+  ["Love is All Around", "0713. Love is All Around.jpg"],
+  ["Love Is All Around 2", "0714. Love Is All Around 2.jpg"],
+  ["LSD Battlefield Simulator", "0715. LSD Battlefield Simulator.jpg"],
+  ["Lucid Cycle", "0716. Lucid Cycle.jpg"],
+  ["Luna Abyss", "0717. Luna Abyss.jpg"],
+  ["Lunar Lander Beyond", "0718. Lunar Lander Beyond.jpg"],
+  ["LUTO", "0719. LUTO.jpg"],
+  ["Madden NFL 21", "0720. Madden NFL 21.jpg"],
+  ["Madden NFL 22", "0721. Madden NFL 22.jpg"],
+  ["Madden NFL 23", "0722. Madden NFL 23.jpg"],
+  ["Madden NFL 24", "0723. Madden NFL 24.jpg"],
+  ["Madden NFL 25", "0724. Madden NFL 25.jpg"],
+  ["Madden NFL 26", "0725. Madden NFL 26.jpg"],
+  ["Madden NFL 27", "0726. Madden NFL 27.jpg"],
+  ["MADiSON", "0727. MADiSON.jpg"],
+  ["MADiSON VR Cursed Edition", "0728. MADiSON VR Cursed Edition.jpg"],
+  ["Mafia Definitive Edition", "0729. Mafia Definitive Edition.jpg"],
+  ["Mafia The Old Country", "0730. Mafia The Old Country.jpg"],
+  ["Majogami", "0731. Majogami.jpg"],
+  ["Mandragora Whispers of The Witch Tree", "0732. Mandragora Whispers of The Witch Tree.jpg"],
+  ["Maneater", "0733. Maneater.jpg"],
+  ["Manual Samuel Last Tuesday Edition", "0734. Manual Samuel Last Tuesday Edition.jpg"],
+  ["Maestro ", "Maestro.jpg"],
+  ["Marsupilami 2 Salsa Palombia", "0735. Marsupilami 2 Salsa Palombia.jpg"],
+  ["Marsupilami Hoobadventure", "0736. Marsupilami Hoobadventure.jpg"],
+  ["Martha is Dead", "0737. Martha is Dead.jpg"],
+  ["Marvel Cosmic Invasion", "0738. Marvel Cosmic Invasion.jpg"],
+  ["MARVEL Tokon Fighting Souls", "0739. MARVEL Tokon Fighting Souls.jpg"],
+  ["Marvels Avengers", "0740. Marvels Avengers.jpg"],
+  ["Marvels Guardians of The Galaxy", "0741. Marvels Guardians of The Galaxy.jpg"],
+  ["Marvels Midnight Suns Enhanced Edition", "0742. Marvels Midnight Suns Enhanced Edition.jpg"],
+  ["Marvels Spider Man 2 Deluxe Edition", "0743. Marvels Spider Man 2 Deluxe Edition.jpg"],
+  ["Marvels Spider Man Miles Morales", "0744. Marvels Spider Man Miles Morales.jpg"],
+  ["Marvels Spider Man Remastered", "0745. Marvels Spider Man Remastered.jpg"],
+  ["Marvels Wolverine", "0746. Marvels Wolverine.jpg"],
+  ["Master Detective Archives RAIN CODE Plus", "0747. Master Detective Archives RAIN CODE Plus.jpg"],
+  ["Matchbox Driving Adventures", "0748. Matchbox Driving Adventures.jpg"],
+  ["Mayhem Brawler", "0749. Mayhem Brawler.jpg"],
+  ["McPixel 3", "0750. McPixel 3.jpg"],
+  ["MechWarrior 5 Mercenaries", "0751. MechWarrior 5 Mercenaries.jpg"],
+  ["Medieval Dynasty", "0752. Medieval Dynasty.jpg"],
+  ["MediEvil", "0753. MediEvil.jpg"],
+  ["MediEvil 2", "0754. MediEvil 2.jpg"],
+  ["MediEvil Resurrection", "0755. MediEvil Resurrection.jpg"],
+  ["Mega Man Star Force Legacy Collection", "0756. Mega Man Star Force Legacy Collection.jpg"],
+  ["Mega Man X Command Mission", "0757. Mega Man X Command Mission.jpg"],
+  ["Megaton", "0758. Megaton.jpg"],
+  ["Megaton Musashi W Wired", "0759. Megaton Musashi W Wired.jpg"],
+  ["Memories Off Sousou Break Out Of My Shell", "0760. Memories Off Sousou Break Out Of My Shell.jpg"],
+  ["Metal Eden", "0761. Metal Eden.jpg"],
+  ["Metal Gear and Metal Gear 2 Solid Snake", "0762. Metal Gear and Metal Gear 2 Solid Snake.jpg"],
+  ["METAL GEAR SOLID 4 Guns of The Patriots Master Collection Version", "0763. METAL GEAR SOLID 4 Guns of The Patriots Master Collection Version.jpg"],
+  ["Metal Gear Solid Delta Snake Eater", "0764. Metal Gear Solid Delta Snake Eater.jpg"],
+  ["Metal Gear Solid Master Collection Vol 1", "0765. Metal Gear Solid Master Collection Vol 1.jpg"],
+  ["Metal Gear Solid Master Collection Vol 1 Bonus Content", "0766. Metal Gear Solid Master Collection Vol 1 Bonus Content.jpg"],
+  ["METAL GEAR SOLID Master Collection Vol 2", "0767. METAL GEAR SOLID Master Collection Vol 2.jpg"],
+  ["METAL GEAR SOLID Peace Walker Master Collection Version", "0768. METAL GEAR SOLID Peace Walker Master Collection Version.jpg"],
+  ["Metal Slug Attack Reloaded", "0769. Metal Slug Attack Reloaded.jpg"],
+  ["Metal Slug Tactics", "0770. Metal Slug Tactics.jpg"],
+  ["Metaphor ReFantazio", "0771. Metaphor ReFantazio.jpg"],
+  ["Metro Awakening", "0772. Metro Awakening.jpg"],
+  ["Metro Exodus Complete Edition", "0773. Metro Exodus Complete Edition.jpg"],
+  ["Mewgenics", "0774. Mewgenics.jpg"],
+  ["Miasma Chronicles", "0775. Miasma Chronicles.jpg"],
+  ["Mighty Goose", "0776. Mighty Goose.jpg"],
+  ["Mighty Morphin Power Rangers Ritas Rewind", "0777. Mighty Morphin Power Rangers Ritas Rewind.jpg"],
+  ["MindsEye", "0778. MindsEye.jpg"],
+  ["Minecraft", "0779. Minecraft.jpg"],
+  ["Minecraft Dungeons 2", "0780. Minecraft Dungeons 2.jpg"],
+  ["Minecraft Legends", "0781. Minecraft Legends.jpg"],
+  ["Minecraft Preview", "0782. Minecraft Preview.jpg"],
+  ["MIO Memories In Orbit", "MIO Memories In Orbit.jpg"],
+  ["Mister Mosquito", "0783. Mister Mosquito.jpg"],
+  ["MLB The Show 21", "0784. MLB The Show 21.jpg"],
+  ["MLB The Show 23", "0785. MLB The Show 23.jpg"],
+  ["MLB The Show 26", "0786. MLB The Show 26.jpg"],
+  ["Mobile Suit Gundam Battle Operation Code Fairy", "0787. Mobile Suit Gundam Battle Operation Code Fairy.jpg"],
+  ["MONOPOLY", "0788. MONOPOLY.jpg"],
+  ["Monster Boy and The Cursed Kingdom", "0789. Monster Boy and The Cursed Kingdom.jpg"],
+  ["Monster Energy Supercross 25 The Official Video Game", "0790. Monster Energy Supercross 25 The Official Video Game.jpg"],
+  ["Monster Energy Supercross The Official Videogame 4", "0791. Monster Energy Supercross The Official Videogame 4.jpg"],
+  ["Monster Energy Supercross The Official Videogame 5", "0792. Monster Energy Supercross The Official Videogame 5.jpg"],
+  ["Monster Energy Supercross The Official Videogame 6", "0793. Monster Energy Supercross The Official Videogame 6.jpg"],
+  ["Monster Hunter Stories 3 Twisted Reflection", "0794. Monster Hunter Stories 3 Twisted Reflection.jpg"],
+  ["Monster Hunter Rise", "Monster Hunter Rise.jpg"],
+  ["Monster Hunter Wilds", "0795. Monster Hunter Wilds.jpg"],
+  ["Monster Jam Showdown", "0796. Monster Jam Showdown.jpg"],
+  ["Monster Truck Championship", "0797. Monster Truck Championship.jpg"],
+  ["Morkull Ragasts Rage", "Morkull Ragasts Rage.jpg"],
+  ["Morbid The Lords of Ire", "0798. Morbid The Lords of Ire.jpg"],
+  ["Mordhau", "0799. Mordhau.jpg"],
+  ["Mortal Kombat 1", "0800. Mortal Kombat 1.jpg"],
+  ["Mortal Kombat 11 Ultimate", "0801. Mortal Kombat 11 Ultimate.jpg"],
+  ["Mortal Kombat Legacy Kollection", "0802. Mortal Kombat Legacy Kollection.jpg"],
+  ["Mortal Shell 2 Deluxe Edition", "0803. Mortal Shell 2 Deluxe Edition.jpg"],
+  ["Mortal Shell Enhanced Edition", "0804. Mortal Shell Enhanced Edition.jpg"],
+  ["Moss Book 2 VR", "Moss Book 2 VR.jpg"],
+  ["Moss VR", "Moss VR.jpg"],
+  ["Moss The Forgotten Relic", "0805. Moss The Forgotten Relic.jpg"],
+  ["Mothmen 1966", "0806. Mothmen 1966.jpg"],
+  ["MotoGP 21", "0807. MotoGP 21.jpg"],
+  ["MotoGP 22", "0808. MotoGP 22.jpg"],
+  ["MotoGP 23", "0809. MotoGP 23.jpg"],
+  ["MotoGP 24", "0810. MotoGP 24.jpg"],
+  ["MotoGP 25", "0811. MotoGP 25.jpg"],
+  ["MotoGP 26", "0812. MotoGP 26.jpg"],
+  ["Motorcycle Mechanic Simulator", "0813. Motorcycle Mechanic Simulator.jpg"],
+  ["MOUSE PI For Hire", "0814. MOUSE PI For Hire.jpg"],
+  ["MOUTHOLE", "0815. MOUTHOLE.jpg"],
+  ["MudRunner", "0816. MudRunner.jpg"],
+  ["Multigun", "0817. Multigun.jpg"],
+  ["MultiVersus", "0818. MultiVersus.jpg"],
+  ["Mundaun", "0819. Mundaun.jpg"],
+  ["Murders On The Yangtze River", "0820. Murders On The Yangtze River.jpg"],
+  ["MX vs ATV Legends", "0821. MX vs ATV Legends.jpg"],
+  ["MXGP 2020 The Official Motocross Videogame", "0822. MXGP 2020 The Official Motocross Videogame.jpg"],
+  ["MXGP 26 The Official Game", "0823. MXGP 26 The Official Game.jpg"],
+  ["My First Gran Turismo", "0824. My First Gran Turismo.jpg"],
+  ["My Friend Peppa Pig", "0825. My Friend Peppa Pig.jpg"],
+  ["My Little Puppy", "0826. My Little Puppy.jpg"],
+  ["My Name is Mayo Remayo", "0827. My Name is Mayo Remayo.jpg"],
+  ["MYST (PS1)", "0828. MYST (PS1).jpg"],
+  ["NAIAD", "0829. NAIAD.jpg"],
+  ["Naruto X Boruto Ultimate Ninja Storm Connections", "0830. Naruto X Boruto Ultimate Ninja Storm Connections.jpg"],
+  ["NASCAR Arcade Rush", "0831. NASCAR Arcade Rush.jpg"],
+  ["NBA 2K21", "0832. NBA 2K21.jpg"],
+  ["NBA 2K22", "0833. NBA 2K22.jpg"],
+  ["NBA 2K23", "0834. NBA 2K23.jpg"],
+  ["NBA 2K24", "0835. NBA 2K24.jpg"],
+  ["NBA 2K25", "0836. NBA 2K25.jpg"],
+  ["NBA 2K26", "0837. NBA 2K26.jpg"],
+  ["NBA 2K27", "0838. NBA 2K27.jpg"],
+  ["Necromunda Hired Gun", "0839. Necromunda Hired Gun.jpg"],
+  ["Need for Speed Unbound", "0840. Need for Speed Unbound.jpg"],
+  ["Neko Rescue Tale", "0841. Neko Rescue Tale.jpg"],
+  ["Neon Inferno", "0842. Neon Inferno.jpg"],
+  ["Neon White", "Neon White.jpg"],
+  ["Neptunia Reverse", "0843. Neptunia Reverse.jpg"],
+  ["Neptunia Sisters VS Sisters", "0844. Neptunia Sisters VS Sisters.jpg"],
+  ["Nerf Legends", "0845. Nerf Legends.jpg"],
+  ["Nerved", "0846. Nerved.jpg"],
+  ["Neva", "0847. Neva.jpg"],
+  ["New Joe and Mac Caveman Ninja", "0848. New Joe and Mac Caveman Ninja.jpg"],
+  ["New Super Luckys Tale", "0849. New Super Luckys Tale.jpg"],
+  ["New Tales From The Borderlands", "0850. New Tales From The Borderlands.jpg"],
+  ["Newtonian Inversion", "0851. Newtonian Inversion.jpg"],
+  ["NHL 23", "0852. NHL 23.jpg"],
+  ["NHL 24", "0853. NHL 24.jpg"],
+  ["NHL 26", "0854. NHL 26.jpg"],
+  ["NHL 27", "0855. NHL 27.jpg"],
+  ["Nice Day for Fishing", "0856. Nice Day for Fishing.jpg"],
+  ["Nickelodeon All Star Brawl", "0857. Nickelodeon All Star Brawl.jpg"],
+  ["Nickelodeon All Star Brawl 2", "0858. Nickelodeon All Star Brawl 2.jpg"],
+  ["Nickelodeon Kart Racers 3 Slime Speedway", "0859. Nickelodeon Kart Racers 3 Slime Speedway.jpg"],
+  ["Night Slashers Remake", "0860. Night Slashers Remake.jpg"],
+  ["Night Trap 25th Anniversary Edition", "0861. Night Trap 25th Anniversary Edition.jpg"],
+  ["NightGhast", "0862. NightGhast.jpg"],
+  ["Nightmare Reaper", "0863. Nightmare Reaper.jpg"],
+  ["Nikoderiko The Magical World Directors Cut", "0864. Nikoderiko The Magical World Directors Cut.jpg"],
+  ["Ninja Gaiden 2 Black", "0865. Ninja Gaiden 2 Black.jpg"],
+  ["Ninja Gaiden 4", "0866. Ninja Gaiden 4.jpg"],
+  ["Ninja Gaiden Ragebound", "0867. Ninja Gaiden Ragebound.jpg"],
+  ["Nioh 2 Remastered The Complete Edition", "0868. Nioh 2 Remastered The Complete Edition.jpg"],
+  ["Nioh 3", "0869. Nioh 3.jpg"],
+  ["Nine Sols", "Nine Sols.jpg"],
+  ["Nioh Remastered The Complete Edition", "0870. Nioh Remastered The Complete Edition.jpg"],
+  ["No Mans Sky", "0871. No Mans Sky.jpg"],
+  ["No More Heroes 3", "0872. No More Heroes 3.jpg"],
+  ["No Sleep For Kaname Date From AI THE SOMNIUM FILES", "0873. No Sleep For Kaname Date From AI THE SOMNIUM FILES.jpg"],
+  ["No Son of Mine", "0874. No Son of Mine.jpg"],
+  ["Nobody Saves The World", "0875. Nobody Saves The World.jpg"],
+  ["Nobody Wants to Die", "0876. Nobody Wants to Die.jpg"],
+  ["Not For Broadcast VR", "0877. Not For Broadcast VR.jpg"],
+  ["Nun of Your Business", "0878. Nun of Your Business.jpg"],
+  ["Observer System Redux", "0879. Observer System Redux.jpg"],
+  ["Oceanhorn 2 Knights of The Lost Realm", "0880. Oceanhorn 2 Knights of The Lost Realm.jpg"],
+  ["Octopath Traveler 0", "0881. Octopath Traveler 0.jpg"],
+  ["Octopath Traveler 2", "0882. Octopath Traveler 2.jpg"],
+  ["Oddworld Abes Exoddus (PS1 Emulation)", "0883. Oddworld Abes Exoddus (PS1 Emulation).jpg"],
+  ["Oddworld Soulstorm", "0884. Oddworld Soulstorm.jpg"],
+  ["OlliOlli World", "0885. OlliOlli World.jpg"],
+  ["On The Road The Truck Simulator", "0886. On The Road The Truck Simulator.jpg"],
+  ["Once Upon A Katamari", "0887. Once Upon A Katamari.jpg"],
+  ["One Gun Guy", "0888. One Gun Guy.jpg"],
+  ["One Last Breath", "0889. One Last Breath.jpg"],
+  ["One Night Stand", "0890. One Night Stand.jpg"],
+  ["One Piece Odyssey", "0891. One Piece Odyssey.jpg"],
+  ["One Piece Pirate Warriors 4", "0892. One Piece Pirate Warriors 4.jpg"],
+  ["Onimusha Dawn of Dreams", "0893. Onimusha Dawn of Dreams.jpg"],
+  ["Onimusha Way of The Sword", "0894. Onimusha Way of The Sword.jpg"],
+  ["Out of Sight", "0895. Out of Sight.jpg"],
+  ["Outcast A New Beginning", "0896. Outcast A New Beginning.jpg"],
+  ["Outer Wilds", "0897. Outer Wilds.jpg"],
+  ["Outward Definitive Edition", "0898. Outward Definitive Edition.jpg"],
+  ["Overcooked All You Can Eat", "0899. Overcooked All You Can Eat.jpg"],
+  ["Overpass 2", "0900. Overpass 2.jpg"],
+  ["Override 2 Super Mech League", "0901. Override 2 Super Mech League.jpg"],
+  ["OVRDARK a Do Not Open story", "0902. OVRDARK a Do Not Open story.jpg"],
+  ["Oxide Room 104", "0903. Oxide Room 104.jpg"],
+  ["Oxide Room 208", "0904. Oxide Room 208.jpg"],
+  ["Pac Man World 2 Re PAC", "0905. Pac Man World 2 Re PAC.jpg"],
+  ["PAC Man World Re PAC", "0906. PAC Man World Re PAC.jpg"],
+  ["Pacific Drive", "0907. Pacific Drive.jpg"],
+  ["Painkiller", "0908. Painkiller.jpg"],
+  ["Paleo Pines", "0909. Paleo Pines.jpg"],
+  ["Palworld", "0910. Palworld.jpg"],
+  ["Panda Hero Remastered", "0911. Panda Hero Remastered.jpg"],
+  ["Paper Beast Enhanced Edition", "Paper Beast Enhanced Edition.jpg"],
+  ["Paper Cut Mansion", "0912. Paper Cut Mansion.jpg"],
+  ["Paper Dolls 2", "0913. Paper Dolls 2.jpg"],
+  ["Papetura", "0914. Papetura.jpg"],
+  ["Park Beyond", "0915. Park Beyond.jpg"],
+  ["Patapon 3", "0916. Patapon 3.jpg"],
+  ["Pathologic 3", "0917. Pathologic 3.jpg"],
+  ["Pavlov", "0918. Pavlov.jpg"],
+  ["PAW Patrol Grand Prix", "0919. PAW Patrol Grand Prix.jpg"],
+  ["PAW Patrol World", "0920. PAW Patrol World.jpg"],
+  ["Persona 3 Reload", "0921. Persona 3 Reload.jpg"],
+  ["Persona 5 Royal Ultimate Edition", "0922. Persona 5 Royal Ultimate Edition.jpg"],
+  ["Persona 5 Tactica Deluxe Edition", "0923. Persona 5 Tactica Deluxe Edition.jpg"],
+  ["Personality and Psychology Premium", "0924. Personality and Psychology Premium.jpg"],
+  ["PGA TOUR 2K23", "0925. PGA TOUR 2K23.jpg"],
+  ["PGA Tour 2K25", "0926. PGA Tour 2K25.jpg"],
+  ["Phantom Breaker Battle Grounds Ultimate", "0927. Phantom Breaker Battle Grounds Ultimate.jpg"],
+  ["Phasmophobia", "0928. Phasmophobia.jpg"],
+  ["Pig Escape", "0929. Pig Escape.jpg"],
+  ["Pig Escape 2", "0930. Pig Escape 2.jpg"],
+  ["Pinball FX", "0931. Pinball FX.jpg"],
+  ["Pinball Heroes", "0932. Pinball Heroes.jpg"],
+  ["Pistol Whip", "0933. Pistol Whip.jpg"],
+  ["Plaguetrix", "0934. Plaguetrix.jpg"],
+  ["Planet Coaster Console Edition", "0935. Planet Coaster Console Edition.jpg"],
+  ["Planet of Lana", "0936. Planet of Lana.jpg"],
+  ["Planet Zoo", "0937. Planet Zoo.jpg"],
+  ["Planet Zoo 2 Deluxe Edition", "0938. Planet Zoo 2 Deluxe Edition.jpg"],
+  ["Plants vs Zombies Replanted", "0939. Plants vs Zombies Replanted.jpg"],
+  ["Plumbers Dont Wear Ties Definitive Edition", "0940. Plumbers Dont Wear Ties Definitive Edition.jpg"],
+  ["Pneumata", "0941. Pneumata.jpg"],
+  ["Police Car Simulator EVO", "0942. Police Car Simulator EVO.jpg"],
+  ["Police Simulator Patrol Officers", "0943. Police Simulator Patrol Officers.jpg"],
+  ["POOLS", "0944. POOLS.jpg"],
+  ["Poppy Playtime Chapter 1", "0945. Poppy Playtime Chapter 1.jpg"],
+  ["Poppy Playtime Chapter 2", "0946. Poppy Playtime Chapter 2.jpg"],
+  ["Poppy Playtime Chapter 3", "0947. Poppy Playtime Chapter 3.jpg"],
+  ["Poppy Playtime Chapter 4", "0948. Poppy Playtime Chapter 4.jpg"],
+  ["Poppy Playtime Chapter 5", "0949. Poppy Playtime Chapter 5.jpg"],
+  ["Port Royale 4", "0950. Port Royale 4.jpg"],
+  ["Post Trauma", "0951. Post Trauma.jpg"],
+  ["POST VOID", "0952. POST VOID.jpg"],
+  ["Postal Brain Damaged", "0953. Postal Brain Damaged.jpg"],
+  ["Potion Permit", "0954. Potion Permit.jpg"],
+  ["Potionomics Masterwork Edition", "0955. Potionomics Masterwork Edition.jpg"],
+  ["Powerwash Simulator", "0956. Powerwash Simulator.jpg"],
+  ["PRAGMATA", "0957. PRAGMATA.jpg"],
+  ["Predator Hunting Grounds", "0958. Predator Hunting Grounds.jpg"],
+  ["Prince of Persia The Lost Crown", "0959. Prince of Persia The Lost Crown.jpg"],
+  ["Project Nightmares Case 36 Henrietta Kedward", "0960. Project Nightmares Case 36 Henrietta Kedward.jpg"],
+  ["Project Wingman Frontline 59", "0961. Project Wingman Frontline 59.jpg"],
+  ["Propagation Paradise Hotel", "0962. Propagation Paradise Hotel.jpg"],
+  ["Psi Ops The Mindgate Conspiracy", "0963. Psi Ops The Mindgate Conspiracy.jpg"],
+  ["Pumpkin Jack", "0964. Pumpkin Jack.jpg"],
+  ["Puppet House", "0965. Puppet House.jpg"],
+  ["Pure Pool Pro", "0966. Pure Pool Pro.jpg"],
+  ["Pursuit Force", "0967. Pursuit Force.jpg"],
+  ["Pursuit Force Extreme Justice", "0968. Pursuit Force Extreme Justice.jpg"],
+  ["Puyo Puyo Tetris 2", "0969. Puyo Puyo Tetris 2.jpg"],
+  ["Puzzle Bobble 3D Vacation Odyssey", "0970. Puzzle Bobble 3D Vacation Odyssey.jpg"],
+  ["PuzzMiX", "0971. PuzzMiX.jpg"],
+  ["Puzzling Places", "Puzzling Places.jpg"],
+  ["Qliphah in Providences Shadow", "0972. Qliphah in Providences Shadow.jpg"],
+  ["Quake", "0973. Quake.jpg"],
+  ["Quake 2", "0974. Quake 2.jpg"],
+  ["Quantum Error", "0975. Quantum Error.jpg"],
+  ["QUBE 10th Anniversary", "0976. QUBE 10th Anniversary.jpg"],
+  ["QUBE 2 Ultimate Edition", "0977. QUBE 2 Ultimate Edition.jpg"],
+  ["R Type Delta HD Boosted", "0978. R Type Delta HD Boosted.jpg"],
+  ["R Type Final 3 Evolved", "0979. R Type Final 3 Evolved.jpg"],
+  ["R4 RIDGE RACER TYPE 4", "0980. R4 RIDGE RACER TYPE 4.jpg"],
+  ["Ragnarock", "Ragnarock.jpg"],
+  ["Raiden III x MIKADO MANIAX", "0981. Raiden III x MIKADO MANIAX.jpg"],
+  ["Raiden IV x Mikado Remix", "0982. Raiden IV x Mikado Remix.jpg"],
+  ["RAIDOU Remastered The Mystery of The Soulless Army", "0983. RAIDOU Remastered The Mystery of The Soulless Army.jpg"],
+  ["Rally Cross", "0984. Rally Cross.jpg"],
+  ["Ratatan", "0985. Ratatan.jpg"],
+  ["Ratchet and Clank Rift Apart", "0986. Ratchet and Clank Rift Apart.jpg"],
+  ["Ratchet Clank Size Matters", "0987. Ratchet Clank Size Matters.jpg"],
+  ["Ratshaker", "0988. Ratshaker.jpg"],
+  ["Rayman 30th Anniversary Edition", "0989. Rayman 30th Anniversary Edition.jpg"],
+  ["Re Re Ghosted", "0990. Re Re Ghosted.jpg"],
+  ["Ready or Not", "0991. Ready or Not.jpg"],
+  ["Real Farm Premium Edition", "0992. Real Farm Premium Edition.jpg"],
+  ["REANIMAL", "0993. REANIMAL.jpg"],
+  ["Rebooted Fate", "0994. Rebooted Fate.jpg"],
+  ["Record of Lodoss War Deedlit in Wonder Labyrinth", "0995. Record of Lodoss War Deedlit in Wonder Labyrinth.jpg"],
+  ["Red Dead Redemption", "0996. Red Dead Redemption.jpg"],
+  ["Red Matter", "0997. Red Matter.jpg"],
+  ["Red Matter 2", "0998. Red Matter 2.jpg"],
+  ["Redemption Reapers", "0999. Redemption Reapers.jpg"],
+  ["Redout 2", "1000. Redout 2.jpg"],
+  ["Remnant 2", "1001. Remnant 2.jpg"],
+  ["Remorse The List", "1002. Remorse The List.jpg"],
+  ["Repentless", "1003. Repentless.jpg"],
+  ["Repentless 2", "1004. Repentless 2.jpg"],
+  ["Resident Evil 2", "1005. Resident Evil 2.jpg"],
+  ["Resident Evil 2 Remake", "1006. Resident Evil 2 Remake.jpg"],
+  ["Resident Evil 3 Nemesis", "1007. Resident Evil 3 Nemesis.jpg"],
+  ["Resident Evil 3 Remake", "1008. Resident Evil 3 Remake.jpg"],
+  ["Resident Evil 4 Remake", "1009. Resident Evil 4 Remake.jpg"],
+  ["Resident Evil 7 Biohazard Gold Edition", "1010. Resident Evil 7 Biohazard Gold Edition.jpg"],
+  ["Resident Evil Directors Cut", "1011. Resident Evil Directors Cut.jpg"],
+  ["Resident Evil Requiem", "1012. Resident Evil Requiem.jpg"],
+  ["Resident Evil Village Gold Edition", "1013. Resident Evil Village Gold Edition.jpg"],
+  ["Resident Evil Village Maiden Demo", "1014. Resident Evil Village Maiden Demo.jpg"],
+  ["Resistance Retribution", "1015. Resistance Retribution.jpg"],
+  ["Resonance A Plague Tale Legacy", "1016. Resonance A Plague Tale Legacy.jpg"],
+  ["RetroRealms Double Feature Halloween and Ash vs Evil Dead", "1017. RetroRealms Double Feature Halloween and Ash vs Evil Dead.jpg"],
+  ["Return To Monkey Island", "1018. Return To Monkey Island.jpg"],
+  ["Returnal", "1019. Returnal.jpg"],
+  ["Revenge of The Savage Planet", "1020. Revenge of The Savage Planet.jpg"],
+  ["Rewind or Die", "1021. Rewind or Die.jpg"],
+  ["REYNATIS", "1022. REYNATIS.jpg"],
+  ["Rez Infinite", "1023. Rez Infinite.jpg"],
+  ["Richman 11", "1024. Richman 11.jpg"],
+  ["RIDE 4", "1025. RIDE 4.jpg"],
+  ["RIDE 5", "1026. RIDE 5.jpg"],
+  ["RIDE 6", "1027. RIDE 6.jpg"],
+  ["Riders Republic", "1028. Riders Republic.jpg"],
+  ["RIDGE RACER", "1029. RIDGE RACER.jpg"],
+  ["Ridge Racer 2", "1030. Ridge Racer 2.jpg"],
+  ["RiMS Racing", "1031. RiMS Racing.jpg"],
+  ["Rise of The Ronin", "1032. Rise of The Ronin.jpg"],
+  ["Risk of Rain 2", "1033. Risk of Rain 2.jpg"],
+  ["Riven The Sequel to Myst (PS1)", "1034. Riven The Sequel to Myst (PS1).jpg"],
+  ["River City Girls", "1035. River City Girls.jpg"],
+  ["Road Hell", "1036. Road Hell.jpg"],
+  ["Road Maintenance Simulator", "1037. Road Maintenance Simulator.jpg"],
+  ["Road of Death", "1038. Road of Death.jpg"],
+  ["Roadcraft", "1039. Roadcraft.jpg"],
+  ["RoboCop Rogue City", "1040. RoboCop Rogue City.jpg"],
+  ["RoboCop Rogue City Unfinished Business", "1041. RoboCop Rogue City Unfinished Business.jpg"],
+  ["Rocket Knight Adventures Re Sparked", "1042. Rocket Knight Adventures Re Sparked.jpg"],
+  ["RollerCoaster Tycoon Adventures Deluxe", "1043. RollerCoaster Tycoon Adventures Deluxe.jpg"],
+  ["Rollercoaster Tycoon 3 Complete Edition", "Rollercoaster Tycoon 3 Complete Edition.jpg"],
+  ["Romance of The Three Kingdoms 8 Remake", "1044. Romance of The Three Kingdoms 8 Remake.jpg"],
+  ["Romance of The Three Kingdoms XIV Complete Edition", "1045. Romance of The Three Kingdoms XIV Complete Edition.jpg"],
+  ["Romancing SaGa 2 Revenge of The Seven", "1046. Romancing SaGa 2 Revenge of The Seven.jpg"],
+  ["Romancing SaGa Minstrel Song Remastered International", "1047. Romancing SaGa Minstrel Song Remastered International.jpg"],
+  ["Romeo Is A Dead Man", "1048. Romeo Is A Dead Man.jpg"],
+  ["Rubberduck Wave Racer", "1049. Rubberduck Wave Racer.jpg"],
+  ["Rugby 25", "1050. Rugby 25.jpg"],
+  ["Rugby League 26", "1051. Rugby League 26.jpg"],
+  ["Rugrats Adventure in Gameland", "1052. Rugrats Adventure in Gameland.jpg"],
+  ["Rune Factory Guardians of Azuma", "1053. Rune Factory Guardians of Azuma.jpg"],
+  ["RuneScape Dragonwilds", "1054. RuneScape Dragonwilds.jpg"],
+  ["RUSHING BEAT X Return Of Brawl Brothers", "1055. RUSHING BEAT X Return Of Brawl Brothers.jpg"],
+  ["Rustler", "1056. Rustler.jpg"],
+  ["Saborus", "1057. Saborus.jpg"],
+  ["Sackboy A Big Adventure", "1058. Sackboy A Big Adventure.jpg"],
+  ["Saga of Sins", "1059. Saga of Sins.jpg"],
+  ["Saints Row", "1060. Saints Row.jpg"],
+  ["Saints Row The Third Remastered", "1061. Saints Row The Third Remastered.jpg"],
+  ["SAMSON A Tyndalston Story", "1062. SAMSON A Tyndalston Story.jpg"],
+  ["Samurai Maiden", "1063. Samurai Maiden.jpg"],
+  ["SAND LAND", "1064. SAND LAND.jpg"],
+  ["SAROS", "1065. SAROS.jpg"],
+  ["Saturnalia", "1066. Saturnalia.jpg"],
+  ["Save Next Christmas", "1067. Save Next Christmas.jpg"],
+  ["Save Room", "1068. Save Room.jpg"],
+  ["Save Room The Merchant", "1069. Save Room The Merchant.jpg"],
+  ["Scarlet Nexus", "1070. Scarlet Nexus.jpg"],
+  ["Scars Above", "1071. Scars Above.jpg"],
+  ["Scary Bucketman", "1072. Scary Bucketman.jpg"],
+  ["SCHIZOPHRENIA", "1073. SCHIZOPHRENIA.jpg"],
+  ["Scorn", "1074. Scorn.jpg"],
+  ["Scott Pilgrim EX", "1075. Scott Pilgrim EX.jpg"],
+  ["Screamer", "1076. Screamer.jpg"],
+  ["SD Gundam Battle Alliance", "1077. SD Gundam Battle Alliance.jpg"],
+  ["Sea of Stars", "1078. Sea of Stars.jpg"],
+  ["Secret Agent Clank", "Secret Agent Clank.jpg"],
+  ["Seed of Life", "Seed of Life.jpg"],
+  ["Seeker My Shadow", "1079. Seeker My Shadow.jpg"],
+  ["Sektori", "1080. Sektori.jpg"],
+  ["Selfloss", "1081. Selfloss.jpg"],
+  ["Senuas Saga Hellblade 2", "1082. Senuas Saga Hellblade 2.jpg"],
+  ["Serious Sam 4", "1083. Serious Sam 4.jpg"],
+  ["Serious Sam Siberian Mayhem", "1084. Serious Sam Siberian Mayhem.jpg"],
+  ["Session Skate Sim", "1085. Session Skate Sim.jpg"],
+  ["Severed Steel", "1086. Severed Steel.jpg"],
+  ["Shadow Gambit The Cursed Crew", "1087. Shadow Gambit The Cursed Crew.jpg"],
+  ["Shadow Labyrinth", "1088. Shadow Labyrinth.jpg"],
+  ["Shadow of The Ninja Reborn", "1089. Shadow of The Ninja Reborn.jpg"],
+  ["Shadow Tactics Blades of The Shogun", "1090. Shadow Tactics Blades of The Shogun.jpg"],
+  ["Shadow Warrior 3 Definitive Edition", "1091. Shadow Warrior 3 Definitive Edition.jpg"],
+  ["Shadows of The Damned Hella Remastered", "1092. Shadows of The Damned Hella Remastered.jpg"],
+  ["Shame Legacy", "1093. Shame Legacy.jpg"],
+  ["Shantae", "1094. Shantae.jpg"],
+  ["Shantae Half Genie Hero Ultimate Edition", "1095. Shantae Half Genie Hero Ultimate Edition.jpg"],
+  ["Shantae Riskys Revenge Directors Cut", "1096. Shantae Riskys Revenge Directors Cut.jpg"],
+  ["Share Factory Studio", "1097. Share Factory Studio.jpg"],
+  ["Sherlock Holmes Chapter One", "1098. Sherlock Holmes Chapter One.jpg"],
+  ["Sherlock Holmes The Awakened", "1099. Sherlock Holmes The Awakened.jpg"],
+  ["Shin Megami Tensei V Vengeance", "1100. Shin Megami Tensei V Vengeance.jpg"],
+  ["Shing!", "1101. Shing!.jpg"],
+  ["SHINOBI Art of Vengeance", "1102. SHINOBI Art of Vengeance.jpg"],
+  ["Ship of Fools", "1103. Ship of Fools.jpg"],
+  ["Shogun Showdown", "1104. Shogun Showdown.jpg"],
+  ["Sid Meiers Civilization VII", "1105. Sid Meiers Civilization VII.jpg"],
+  ["SIFU", "1106. SIFU.jpg"],
+  ["Silent Hill 2", "1107. Silent Hill 2.jpg"],
+  ["Silent Hill f", "1108. Silent Hill f.jpg"],
+  ["SILENT HILL The Short Message", "1109. SILENT HILL The Short Message.jpg"],
+  ["Silent Hill Townfall", "1110. Silent Hill Townfall.jpg"],
+  ["Silt", "1111. Silt.jpg"],
+  ["Sir Lovelot", "1112. Sir Lovelot.jpg"],
+  ["Siren", "1113. Siren.jpg"],
+  ["Skautfold Into The Fray", "1114. Skautfold Into The Fray.jpg"],
+  ["Skautfold Shrouded in Sanity", "1115. Skautfold Shrouded in Sanity.jpg"],
+  ["Sker Ritual", "1116. Sker Ritual.jpg"],
+  ["Skull Island Rise of Kong", "1117. Skull Island Rise of Kong.jpg"],
+  ["Sky Oceans Wings For Hire", "1118. Sky Oceans Wings For Hire.jpg"],
+  ["Skydances BEHEMOTH", "1119. Skydances BEHEMOTH.jpg"],
+  ["Slave Zero X", "1120. Slave Zero X.jpg"],
+  ["Slay The Princess The Pristine Cut", "1121. Slay The Princess The Pristine Cut.jpg"],
+  ["Slitterhead", "1122. Slitterhead.jpg"],
+  ["Sly 2 Band of Thieves", "1123. Sly 2 Band of Thieves.jpg"],
+  ["Sly 3 Honour Among Thieves", "1124. Sly 3 Honour Among Thieves.jpg"],
+  ["Sly Cooper and The Thievius Raccoonus", "1125. Sly Cooper and The Thievius Raccoonus.jpg"],
+  ["Smalland Survive The Wilds", "1126. Smalland Survive The Wilds.jpg"],
+  ["Smurfs Kart", "1127. Smurfs Kart.jpg"],
+  ["Sniper Elite 5", "1128. Sniper Elite 5.jpg"],
+  ["Sniper Elite Resistance", "1129. Sniper Elite Resistance.jpg"],
+  ["Sniper Ghost Warrior Contracts 2", "1130. Sniper Ghost Warrior Contracts 2.jpg"],
+  ["Snoopy and The Great Mystery Club Deluxe Edition", "1131. Snoopy and The Great Mystery Club Deluxe Edition.jpg"],
+  ["Snow Scout", "1132. Snow Scout.jpg"],
+  ["SnowRunner", "1133. SnowRunner.jpg"],
+  ["Sofiya and The Ancient Clan", "1134. Sofiya and The Ancient Clan.jpg"],
+  ["Someday Youll Return Directors Cut", "1135. Someday Youll Return Directors Cut.jpg"],
+  ["Song in The Smoke Rekindled", "1136. Song in The Smoke Rekindled.jpg"],
+  ["Sonic Frontiers", "1137. Sonic Frontiers.jpg"],
+  ["Sonic Origins Plus", "1138. Sonic Origins Plus.jpg"],
+  ["Sonic Racing CrossWorlds", "1139. Sonic Racing CrossWorlds.jpg"],
+  ["Sonic Superstars", "1140. Sonic Superstars.jpg"],
+  ["Sonic The Hedgehog 2006 (Unofficial Port)", "1141. Sonic The Hedgehog 2006 (Unofficial Port).jpg"],
+  ["Sonic Unleashed Recompiled (Unofficial Port)", "1142. Sonic Unleashed Recompiled (Unofficial Port).jpg"],
+  ["Sonic X Shadow Generations", "1143. Sonic X Shadow Generations.jpg"],
+  ["Soul Hackers 2", "1144. Soul Hackers 2.jpg"],
+  ["SOULCALIBUR 3", "1145. SOULCALIBUR 3.jpg"],
+  ["Soulcalibur Broken Destiny", "1146. Soulcalibur Broken Destiny.jpg"],
+  ["Soulstice", "1147. Soulstice.jpg"],
+  ["Source of Madness", "1148. Source of Madness.jpg"],
+  ["South of Midnight", "1149. South of Midnight.jpg"],
+  ["SOUTH PARK SNOW DAY", "1150. SOUTH PARK SNOW DAY.jpg"],
+  ["Space Adventure Cobra The Awakening", "1151. Space Adventure Cobra The Awakening.jpg"],
+  ["Spacebase Startopia", "1152. Spacebase Startopia.jpg"],
+  ["Spectrewoods", "1153. Spectrewoods.jpg"],
+  ["SpellForce Conquest of Eo", "1154. SpellForce Conquest of Eo.jpg"],
+  ["Spiritfall", "Spiritfall.jpg"],
+  ["Spirit of The Island", "1155. Spirit of The Island.jpg"],
+  ["Spirit of The North 2", "1156. Spirit of The North 2.jpg"],
+  ["Spirit of The North Enhanced Edition", "1157. Spirit of The North Enhanced Edition.jpg"],
+  ["Split Fiction", "1158. Split Fiction.jpg"],
+  ["SpongeBob SquarePants Titans of The Tide", "1159. SpongeBob SquarePants Titans of The Tide.jpg"],
+  ["SPY X ANYA Operation Memories Deluxe Edition", "1160. SPY X ANYA Operation Memories Deluxe Edition.jpg"],
+  ["Squirrel With A Gun", "1161. Squirrel With A Gun.jpg"],
+  ["STALKER 2 Heart of Chornobyl", "1162. STALKER 2 Heart of Chornobyl.jpg"],
+  ["STALKER Call of Prypiat Enhanсed Edition", "1163. STALKER Call of Prypiat Enhanсed Edition.jpg"],
+  ["STALKER Clear Sky Enhanсed Edition", "1164. STALKER Clear Sky Enhanсed Edition.jpg"],
+  ["STALKER Shadow of Chornobyl Enhanсed Edition", "1165. STALKER Shadow of Chornobyl Enhanсed Edition.jpg"],
+  ["Star Ocean The Divine Force", "1166. Star Ocean The Divine Force.jpg"],
+  ["Star Ocean The Second Story R", "1167. Star Ocean The Second Story R.jpg"],
+  ["Star Overdrive", "Star Overdrive.jpg"],
+  ["Star Trek Prodigy Supernova", "1168. Star Trek Prodigy Supernova.jpg"],
+  ["Star Trek Resurgence", "1169. Star Trek Resurgence.jpg"],
+  ["Star Wars Dark Forces Remaster", "1170. Star Wars Dark Forces Remaster.jpg"],
+  ["Star Wars Demolition", "1171. Star Wars Demolition.jpg"],
+  ["Star Wars Episode I The Phantom Menace", "1172. Star Wars Episode I The Phantom Menace.jpg"],
+  ["STAR WARS Galactic Racer", "1173. STAR WARS Galactic Racer.jpg"],
+  ["Star Wars Jedi Fallen Order", "1174. Star Wars Jedi Fallen Order.jpg"],
+  ["Star Wars Jedi Survivor", "1175. Star Wars Jedi Survivor.jpg"],
+  ["Star Wars Outlaws", "1176. Star Wars Outlaws.jpg"],
+  ["Star Wars Rebel Assault 2 The Hidden Empire", "1177. Star Wars Rebel Assault 2 The Hidden Empire.jpg"],
+  ["Star Wars Tales From The Galaxys Edge", "1178. Star Wars Tales From The Galaxys Edge.jpg"],
+  ["Star Wars The Clone Wars", "1179. Star Wars The Clone Wars.jpg"],
+  ["Star Wars Zero Company", "1180. Star Wars Zero Company.jpg"],
+  ["Starfield", "1181. Starfield.jpg"],
+  ["SteamWorld Build", "1182. SteamWorld Build.jpg"],
+  ["SteamWorld Heist 2", "1183. SteamWorld Heist 2.jpg"],
+  ["Steel Seed Deluxe Edition", "1184. Steel Seed Deluxe Edition.jpg"],
+  ["Steelrising", "1185. Steelrising.jpg"],
+  ["Steins Gate Re Boot", "1186. Steins Gate Re Boot.jpg"],
+  ["Stellar Blade", "1187. Stellar Blade.jpg"],
+  ["Stellaris Console Edition", "1188. Stellaris Console Edition.jpg"],
+  ["Still Wakes The Deep", "1189. Still Wakes The Deep.jpg"],
+  ["STORY OF SEASONS A Wonderful Life", "1190. STORY OF SEASONS A Wonderful Life.jpg"],
+  ["Story of Seasons Grand Bazaar", "1191. Story of Seasons Grand Bazaar.jpg"],
+  ["Stranger of Paradise Final Fantasy Origin", "1192. Stranger of Paradise Final Fantasy Origin.jpg"],
+  ["Stray", "1193. Stray.jpg"],
+  ["Street Fighter 6", "1194. Street Fighter 6.jpg"],
+  ["Street Outlaws 2 Winner Takes All", "1195. Street Outlaws 2 Winner Takes All.jpg"],
+  ["Stroke The Dik Dik", "1196. Stroke The Dik Dik.jpg"],
+  ["Stroke The Snake", "1197. Stroke The Snake.jpg"],
+  ["Stupid Never Dies", "1198. Stupid Never Dies.jpg"],
+  ["Styx Blades of Greed", "1199. Styx Blades of Greed.jpg"],
+  ["Subnautica", "1200. Subnautica.jpg"],
+  ["Subnautica Below Zero", "1201. Subnautica Below Zero.jpg"],
+  ["Sudden Strike 5 Deluxe Edition", "1202. Sudden Strike 5 Deluxe Edition.jpg"],
+  ["Suicide Guy The Lost Dreams", "1203. Suicide Guy The Lost Dreams.jpg"],
+  ["Suicide Guy VR Deluxe", "1204. Suicide Guy VR Deluxe.jpg"],
+  ["Suicide Squad Kill The Justice League", "1205. Suicide Squad Kill The Justice League.jpg"],
+  ["Suika Game", "1206. Suika Game.jpg"],
+  ["Suikoden I&II HD Remaster Gate Rune and Dunan Unification Wars", "1207. Suikoden I&II HD Remaster Gate Rune and Dunan Unification Wars.jpg"],
+  ["Summer Sports Games 4K Edition", "1208. Summer Sports Games 4K Edition.jpg"],
+  ["Summers Heartbeat", "1209. Summers Heartbeat.jpg"],
+  ["Summum Aeterna", "1210. Summum Aeterna.jpg"],
+  ["Super Bomberman R 2", "1211. Super Bomberman R 2.jpg"],
+  ["Super Crazy Rhythm Castle", "1212. Super Crazy Rhythm Castle.jpg"],
+  ["Super Meat Boy 3D", "1213. Super Meat Boy 3D.jpg"],
+  ["Super Mega Baseball 4", "1214. Super Mega Baseball 4.jpg"],
+  ["Super Monkey Ball Banana Mania", "1215. Super Monkey Ball Banana Mania.jpg"],
+  ["Super Robot Wars Y", "1216. Super Robot Wars Y.jpg"],
+  ["Super Sami Roll", "1217. Super Sami Roll.jpg"],
+  ["Super Woden GP", "1218. Super Woden GP.jpg"],
+  ["Superliminal", "1219. Superliminal.jpg"],
+  ["Survival Fountain of Youth", "1220. Survival Fountain of Youth.jpg"],
+  ["Sword and Fairy Together Forever", "1221. Sword and Fairy Together Forever.jpg"],
+  ["Sword Art Online Fractured Daydream", "1222. Sword Art Online Fractured Daydream.jpg"],
+  ["Sword Art Online Last Recollection", "1223. Sword Art Online Last Recollection.jpg"],
+  ["Sword of The Sea", "1224. Sword of The Sea.jpg"],
+  ["Syberia Remastered", "1225. Syberia Remastered.jpg"],
+  ["Syberia The World Before", "1226. Syberia The World Before.jpg"],
+  ["Synapse", "1227. Synapse.jpg"],
+  ["Syphon Filter", "1228. Syphon Filter.jpg"],
+  ["Syphon Filter 2", "1229. Syphon Filter 2.jpg"],
+  ["Syphon Filter 3", "1230. Syphon Filter 3.jpg"],
+  ["Syphon Filter Dark Mirror", "1231. Syphon Filter Dark Mirror.jpg"],
+  ["Syphon Filter Logans Shadow", "1232. Syphon Filter Logans Shadow.jpg"],
+  ["System of Souls", "1233. System of Souls.jpg"],
+  ["System Shock", "1234. System Shock.jpg"],
+  ["TABS Totally Accurate Battle Simulator", "1235. TABS Totally Accurate Battle Simulator.jpg"],
+  ["Tactics Ogre Reborn", "1236. Tactics Ogre Reborn.jpg"],
+  ["Tad The Lost Explorer", "1237. Tad The Lost Explorer.jpg"],
+  ["Taiko no Tatsujin Donderful Festival Demo", "1238. Taiko no Tatsujin Donderful Festival Demo.jpg"],
+  ["Taiko no Tatsujin Rhythm Festival", "1239. Taiko no Tatsujin Rhythm Festival.jpg"],
+  ["Tails of Iron", "1240. Tails of Iron.jpg"],
+  ["Tainted Grail The Fall of Avalon", "1241. Tainted Grail The Fall of Avalon.jpg"],
+  ["Tales of Arise", "1242. Tales of Arise.jpg"],
+  ["Tales of Berseria Remastered", "1243. Tales of Berseria Remastered.jpg"],
+  ["Tales of Eternia Remastered", "1244. Tales of Eternia Remastered.jpg"],
+  ["Tales of Graces F Remastered", "1245. Tales of Graces F Remastered.jpg"],
+  ["Tales of Kenzera ZAU", "1246. Tales of Kenzera ZAU.jpg"],
+  ["Tales of The Shire A The Lord of The Rings Game", "Tales of The Shire A The Lord of The Rings Game.jpg"],
+  ["Tales of Xillia Remastered", "1247. Tales of Xillia Remastered.jpg"],
+  ["TAPE Unveil The Memories", "1248. TAPE Unveil The Memories.jpg"],
+  ["Taxi Chaos 2", "1249. Taxi Chaos 2.jpg"],
+  ["Taxi Life A City Driving Simulator", "1250. Taxi Life A City Driving Simulator.jpg"],
+  ["TCG Card Shop Simulator", "1251. TCG Card Shop Simulator.jpg"],
+  ["Tchia Oléti Edition", "1252. Tchia Oléti Edition.jpg"],
+  ["Teardown", "1253. Teardown.jpg"],
+  ["Teenage Mutant Ninja Turtles Arcade Wrath of The Mutants", "1254. Teenage Mutant Ninja Turtles Arcade Wrath of The Mutants.jpg"],
+  ["Teenage Mutant Ninja Turtles Mutants Unleashed", "1255. Teenage Mutant Ninja Turtles Mutants Unleashed.jpg"],
+  ["Teenage Mutant Ninja Turtles Shredders Revenge", "1256. Teenage Mutant Ninja Turtles Shredders Revenge.jpg"],
+  ["Teenage Mutant Ninja Turtles Splintered Fate", "1257. Teenage Mutant Ninja Turtles Splintered Fate.jpg"],
+  ["Teenage Mutant Ninja Turtles The Cowabunga Collection", "1258. Teenage Mutant Ninja Turtles The Cowabunga Collection.jpg"],
+  ["Tekken 2", "1259. Tekken 2.jpg"],
+  ["TEKKEN 3", "1260. TEKKEN 3.jpg"],
+  ["Tekken 6", "1261. Tekken 6.jpg"],
+  ["TEKKEN 8", "1262. TEKKEN 8.jpg"],
+  ["TEKKEN DARK RESURRECTION", "1263. TEKKEN DARK RESURRECTION.jpg"],
+  ["Tennis On Court", "1264. Tennis On Court.jpg"],
+  ["Tennis World Tour 2 Complete Edition", "1265. Tennis World Tour 2 Complete Edition.jpg"],
+  ["Tentacular", "1266. Tentacular.jpg"],
+  ["Terminator 2D NO FATE", "1267. Terminator 2D NO FATE.jpg"],
+  ["Terminator Resistance Enhanced", "1268. Terminator Resistance Enhanced.jpg"],
+  ["TERRIFIER The ArtCade Game", "1269. TERRIFIER The ArtCade Game.jpg"],
+  ["Tetris Effect Connected", "1270. Tetris Effect Connected.jpg"],
+  ["Tetris Forever", "1271. Tetris Forever.jpg"],
+  ["TEVI", "1272. TEVI.jpg"],
+  ["The 7th Guest", "1273. The 7th Guest.jpg"],
+  ["The 7th Guest Remake", "1274. The 7th Guest Remake.jpg"],
+  ["The 7th Guest VR", "1275. The 7th Guest VR.jpg"],
+  ["The Adventures of Elliot The Millennium Tales", "1276. The Adventures of Elliot The Millennium Tales.jpg"],
+  ["The Alters", "1277. The Alters.jpg"],
+  ["The Ascent", "1278. The Ascent.jpg"],
+  ["The Bearer and The Last Flame", "1279. The Bearer and The Last Flame.jpg"],
+  ["The Beast Inside", "1280. The Beast Inside.jpg"],
+  ["The Binding of Isaac Repentance", "1281. The Binding of Isaac Repentance.jpg"],
+  ["The Blood of Dawnwalker", "1282. The Blood of Dawnwalker.jpg"],
+  ["The Bounty Huntress", "1283. The Bounty Huntress.jpg"],
+  ["The Bridge Curse 2 The Extrication", "1284. The Bridge Curse 2 The Extrication.jpg"],
+  ["The Bunker", "1285. The Bunker.jpg"],
+  ["The Caligula Effect 2", "1286. The Caligula Effect 2.jpg"],
+  ["The Caligula Effect Overdose", "1287. The Caligula Effect Overdose.jpg"],
+  ["The Callisto Protocol", "1288. The Callisto Protocol.jpg"],
+  ["The Casting of Frank Stone", "1289. The Casting of Frank Stone.jpg"],
+  ["The Chant", "1290. The Chant.jpg"],
+  ["The Crown of Wu", "1291. The Crown of Wu.jpg"],
+  ["The Dark Pictures Anthology House of Ashes", "1292. The Dark Pictures Anthology House of Ashes.jpg"],
+  ["The Dark Pictures Anthology Little Hope", "1293. The Dark Pictures Anthology Little Hope.jpg"],
+  ["The Dark Pictures Anthology Man of Medan", "1294. The Dark Pictures Anthology Man of Medan.jpg"],
+  ["The Dark Pictures Anthology The Devil in Me", "1295. The Dark Pictures Anthology The Devil in Me.jpg"],
+  ["The Dark Pictures Switchback VR", "1296. The Dark Pictures Switchback VR.jpg"],
+  ["The Dead Tree of Ranchiuna", "1297. The Dead Tree of Ranchiuna.jpg"],
+  ["The DioField Chronicle", "1298. The DioField Chronicle.jpg"],
+  ["The Dungeon of Naheulbeuk The Amulet of Chaos", "1299. The Dungeon of Naheulbeuk The Amulet of Chaos.jpg"],
+  ["The Elder Scrolls 3 Morrowind", "1300. The Elder Scrolls 3 Morrowind.jpg"],
+  ["The Elder Scrolls IV Oblivion Remastered", "1301. The Elder Scrolls IV Oblivion Remastered.jpg"],
+  ["The Elder Scrolls V Skyrim Special Edition", "1302. The Elder Scrolls V Skyrim Special Edition.jpg"],
+  ["The Enigma Machine", "1303. The Enigma Machine.jpg"],
+  ["The Eternal Cylinder", "1304. The Eternal Cylinder.jpg"],
+  ["The Exit 8 | Platform 8", "1305. The Exit 8 Platform 8.jpg"],
+  ["The Exit 9", "1306. The Exit 9.jpg"],
+  ["The First Berserker Khazan", "1307. The First Berserker Khazan.jpg"],
+  ["The Forest Cathedral", "1308. The Forest Cathedral.jpg"],
+  ["The Forgotten City", "1309. The Forgotten City.jpg"],
+  ["The Forgotten Tribe", "1310. The Forgotten Tribe.jpg"],
+  ["The Grinch Christmas Adventures", "1311. The Grinch Christmas Adventures.jpg"],
+  ["The House of The Dead 2 Remake", "1312. The House of The Dead 2 Remake.jpg"],
+  ["The House of the Dead Remake", "1313. The House of the Dead Remake.jpg"],
+  ["The Invincible", "1314. The Invincible.jpg"],
+  ["The Karate Kid Street Rumble", "1315. The Karate Kid Street Rumble.jpg"],
+  ["The King is Watching", "1316. The King is Watching.jpg"],
+  ["The King of Fighters XV", "1317. The King of Fighters XV.jpg"],
+  ["The Knight Witch", "1318. The Knight Witch.jpg"],
+  ["The Last Faith", "1319. The Last Faith.jpg"],
+  ["The Last of Us Part 2 Remastered", "1320. The Last of Us Part 2 Remastered.jpg"],
+  ["The Last of Us Part I", "1321. The Last of Us Part I.jpg"],
+  ["The Last Oricru Final Cut", "1322. The Last Oricru Final Cut.jpg"],
+  ["The Last Stand Aftermath", "1323. The Last Stand Aftermath.jpg"],
+  ["The Legend of Heroes Trails beyond The Horizon", "1324. The Legend of Heroes Trails beyond The Horizon.jpg"],
+  ["The Legend of Heroes Trails From Zero", "1325. The Legend of Heroes Trails From Zero.jpg"],
+  ["The Legend of Heroes Trails into Reverie", "The Legend of Heroes Trails into Reverie.jpg"],
+  ["The Legend of Heroes Trails of Cold Steel 3", "1326. The Legend of Heroes Trails of Cold Steel 3.jpg"],
+  ["The Legend of Heroes Trails of Cold Steel 4", "1327. The Legend of Heroes Trails of Cold Steel 4.jpg"],
+  ["The Legend of Heroes Trails through Daybreak", "1328. The Legend of Heroes Trails through Daybreak.jpg"],
+  ["The Legend of Heroes Trails through Daybreak 2", "1329. The Legend of Heroes Trails through Daybreak 2.jpg"],
+  ["The Legend of Heroes Trails to Azure", "1330. The Legend of Heroes Trails to Azure.jpg"],
+  ["The Legend of Tianding", "1331. The Legend of Tianding.jpg"],
+  ["The Light Brigade", "1332. The Light Brigade.jpg"],
+  ["The Long Dark", "1333. The Long Dark.jpg"],
+  ["The Lord of The Rings Gollum", "1334. The Lord of The Rings Gollum.jpg"],
+  ["The Lord of The Rings Return to Moria", "1335. The Lord of The Rings Return to Moria.jpg"],
+  ["The Loves Ordeal", "1336. The Loves Ordeal.jpg"],
+  ["The Matrix Awakens An Unreal Engine 5 Experience", "1337. The Matrix Awakens An Unreal Engine 5 Experience.jpg"],
+  ["The Medium", "1338. The Medium.jpg"],
+  ["The Messenger", "1339. The Messenger.jpg"],
+  ["The Midnight Walk", "1340. The Midnight Walk.jpg"],
+  ["The Mortuary Assistant", "1341. The Mortuary Assistant.jpg"],
+  ["The Mound Omen of Cthulhu", "1342. The Mound Omen of Cthulhu.jpg"],
+  ["The Oregon Trail", "1343. The Oregon Trail.jpg"],
+  ["The Outer Worlds 2", "1344. The Outer Worlds 2.jpg"],
+  ["The Outer Worlds Spacers Choice Edition", "1345. The Outer Worlds Spacers Choice Edition.jpg"],
+  ["The Pathless", "1346. The Pathless.jpg"],
+  ["The Persistence Enhanced Edition", "1347. The Persistence Enhanced Edition.jpg"],
+  ["THE PLANE EFFECT", "1348. THE PLANE EFFECT.jpg"],
+  ["The Plucky Squire", "1349. The Plucky Squire.jpg"],
+  ["The Precinct", "1350. The Precinct.jpg"],
+  ["The Quarry", "1351. The Quarry.jpg"],
+  ["The Relic First Guardian", "1352. The Relic First Guardian.jpg"],
+  ["The Riftbreaker", "1353. The Riftbreaker.jpg"],
+  ["The Rogue Prince of Persia", "1354. The Rogue Prince of Persia.jpg"],
+  ["The Saviors Gang", "1355. The Saviors Gang.jpg"],
+  ["The Sinking City 2", "1356. The Sinking City 2.jpg"],
+  ["The Sinking City Remastered", "1357. The Sinking City Remastered.jpg"],
+  ["The Sinking Forest – 沈んだ森 –", "1358. The Sinking Forest – 沈んだ森 –.jpg"],
+  ["The Smurfs 2 The Prisoner of the Green Stone", "1359. The Smurfs 2 The Prisoner of the Green Stone.jpg"],
+  ["The Smurfs Dreams", "1360. The Smurfs Dreams.jpg"],
+  ["The Smurfs Mission Vileaf", "1361. The Smurfs Mission Vileaf.jpg"],
+  ["The Stanley Parable Ultra Deluxe", "The Stanley Parable Ultra Deluxe.jpg"],
+  ["The Street 10", "1362. The Street 10.jpg"],
+  ["The Suicide of Rachel Foster", "1363. The Suicide of Rachel Foster.jpg"],
+  ["The Tale of Onogoro", "1364. The Tale of Onogoro.jpg"],
+  ["The Talos Principle 2", "1365. The Talos Principle 2.jpg"],
+  ["The Thing Remastered", "1366. The Thing Remastered.jpg"],
+  ["The Thaumaturge", "The Thaumaturge.jpg"],
+  ["The Walking Dead Destinies", "1367. The Walking Dead Destinies.jpg"],
+  ["The Walking Dead Saints and Sinners", "1368. The Walking Dead Saints and Sinners.jpg"],
+  ["The Walking Dead Saints and Sinners Chapter 2 Retribution", "1369. The Walking Dead Saints and Sinners Chapter 2 Retribution.jpg"],
+  ["The Walking Dead Streets of Survival Deluxe Edition", "1370. The Walking Dead Streets of Survival Deluxe Edition.jpg"],
+  ["The Witcher 3 Wild Hunt Complete Edition", "1371. The Witcher 3 Wild Hunt Complete Edition.jpg"],
+  ["This War of Mine Final Cut", "1372. This War of Mine Final Cut.jpg"],
+  ["Three Minutes To Eight", "1373. Three Minutes To Eight.jpg"],
+  ["Thymesia", "1374. Thymesia.jpg"],
+  ["Tides of Tomorrow", "1375. Tides of Tomorrow.jpg"],
+  ["TIEBREAK Official Game of The ATP and WTA Ace Edition", "1376. TIEBREAK Official Game of The ATP and WTA Ace Edition.jpg"],
+  ["Tiger Blade", "1377. Tiger Blade.jpg"],
+  ["TIME CRISIS", "1378. TIME CRISIS.jpg"],
+  ["TimeSplitters", "1379. TimeSplitters.jpg"],
+  ["TimeSplitters 2", "1380. TimeSplitters 2.jpg"],
+  ["TimeSplitters Future Perfect", "1381. TimeSplitters Future Perfect.jpg"],
+  ["Tintin Reporter Cigars of The Pharaoh", "1382. Tintin Reporter Cigars of The Pharaoh.jpg"],
+  ["Tiny Bookshop", "Tiny Bookshop.jpg"],
+  ["Tiny Tinas Wonderlands", "1383. Tiny Tinas Wonderlands.jpg"],
+  ["TOEM", "1384. TOEM.jpg"],
+  ["Together Moon Escape", "1385. Together Moon Escape.jpg"],
+  ["Tokyo Xtreme Racer", "1386. Tokyo Xtreme Racer.jpg"],
+  ["Tomb Raider I-III Remastered Starring Lara Croft", "1387. Tomb Raider I-III Remastered Starring Lara Croft.jpg"],
+  ["Tomb Raider IV-VI Remastered", "1388. Tomb Raider IV-VI Remastered.jpg"],
+  ["Tomb Raider Legend", "1389. Tomb Raider Legend.jpg"],
+  ["Tomba 2 The Evil Swine Return Special Edition", "1390. Tomba 2 The Evil Swine Return Special Edition.jpg"],
+  ["Tomba Special Edition", "1391. Tomba Special Edition.jpg"],
+  ["Tony Hawks Pro Skater 1 + 2", "1392. Tony Hawks Pro Skater 1 + 2.jpg"],
+  ["Tony Hawks Pro Skater 3 + 4", "1393. Tony Hawks Pro Skater 3 + 4.jpg"],
+  ["TopSpin 2K25", "1394. TopSpin 2K25.jpg"],
+  ["Tormented Souls", "1395. Tormented Souls.jpg"],
+  ["Tormented Souls 2", "1396. Tormented Souls 2.jpg"],
+  ["Total Chaos", "1397. Total Chaos.jpg"],
+  ["Totally Reliable Delivery Service", "1398. Totally Reliable Delivery Service.jpg"],
+  ["Touhou Koumakyou New Classic The Embodiment of Scarlet Devil", "1399. Touhou Koumakyou New Classic The Embodiment of Scarlet Devil.jpg"],
+  ["Touhou Luna Nights", "1400. Touhou Luna Nights.jpg"],
+  ["Tour de France 2023", "1401. Tour de France 2023.jpg"],
+  ["Tour de France 2024", "1402. Tour de France 2024.jpg"],
+  ["Tour de France 2025", "1403. Tour de France 2025.jpg"],
+  ["Tourist Bus Simulator", "1404. Tourist Bus Simulator.jpg"],
+  ["Towa and The Guardians of The Sacred Tree", "1405. Towa and The Guardians of The Sacred Tree.jpg"],
+  ["Towerborne", "1406. Towerborne.jpg"],
+  ["Toy Story Retro Roundup + Toy Story 3 Complete Edition Double Pack", "1407. Toy Story Retro Roundup + Toy Story 3 Complete Edition Double Pack.jpg"],
+  ["Trackmania Free Starter Access", "1408. Trackmania Free Starter Access.jpg"],
+  ["Trails in The Sky 1st Chapter", "1409. Trails in The Sky 1st Chapter.jpg"],
+  ["Trails in The Sky 2nd Chapter", "1410. Trails in The Sky 2nd Chapter.jpg"],
+  ["Train Life A Railway Simulator", "1411. Train Life A Railway Simulator.jpg"],
+  ["Train Sim World 2 Rush Hour Deluxe Edition", "1412. Train Sim World 2 Rush Hour Deluxe Edition.jpg"],
+  ["Train Sim World 3", "1413. Train Sim World 3.jpg"],
+  ["Train Sim World 4", "1414. Train Sim World 4.jpg"],
+  ["Train Sim World 5", "1415. Train Sim World 5.jpg"],
+  ["Train Sim World 6", "1416. Train Sim World 6.jpg"],
+  ["Transformer Galactic Trails", "1417. Transformer Galactic Trails.jpg"],
+  ["Transformers Earthspark Expedition", "1418. Transformers Earthspark Expedition.jpg"],
+  ["Transport Fever 2 Console Edition", "1419. Transport Fever 2 Console Edition.jpg"],
+  ["Treasures of The Aegean", "1420. Treasures of The Aegean.jpg"],
+  ["Trek To Yomi", "1421. Trek To Yomi.jpg"],
+  ["Trepang2", "1422. Trepang2.jpg"],
+  ["TRIANGLE STRATEGY", "1423. TRIANGLE STRATEGY.jpg"],
+  ["Trifox", "1424. Trifox.jpg"],
+  ["Trine 5 A Clockwork Conspiracy", "1425. Trine 5 A Clockwork Conspiracy.jpg"],
+  ["Trinity Trigger", "1426. Trinity Trigger.jpg"],
+  ["Tropico 6", "1427. Tropico 6.jpg"],
+  ["TROX", "1428. TROX.jpg"],
+  ["Tunic", "Tunic.jpg"],
+  ["Turbo Overkill", "1429. Turbo Overkill.jpg"],
+  ["Turok Trilogy Bundle", "1430. Turok Trilogy Bundle.jpg"],
+  ["Twisted Metal", "1431. Twisted Metal.jpg"],
+  ["Twisted Metal 2", "1432. Twisted Metal 2.jpg"],
+  ["Twisted Metal 3", "1433. Twisted Metal 3.jpg"],
+  ["Twisted Metal 4", "1434. Twisted Metal 4.jpg"],
+  ["Two Point Campus", "1435. Two Point Campus.jpg"],
+  ["Two Point Museum", "1436. Two Point Museum.jpg"],
+  ["UFO Robot Grendizer The Feast of The Wolves", "1437. UFO Robot Grendizer The Feast of The Wolves.jpg"],
+  ["Ufouria The Saga 2", "1438. Ufouria The Saga 2.jpg"],
+  ["Ultrawings 2", "1439. Ultrawings 2.jpg"],
+  ["Ultros", "1440. Ultros.jpg"],
+  ["UNABLES", "1441. UNABLES.jpg"],
+  ["Unbound Worlds Apart", "1442. Unbound Worlds Apart.jpg"],
+  ["Uncharted Legacy of Thieves Collection", "1443. Uncharted Legacy of Thieves Collection.jpg"],
+  ["Undefeated", "1444. Undefeated.jpg"],
+  ["Under The Warehouse", "1445. Under The Warehouse.jpg"],
+  ["Under The Waves", "1446. Under The Waves.jpg"],
+  ["Underdog Detective", "1447. Underdog Detective.jpg"],
+  ["Undisputed", "1448. Undisputed.jpg"],
+  ["Unholy", "1449. Unholy.jpg"],
+  ["Unicorn Overlord", "1450. Unicorn Overlord.jpg"],
+  ["Unknown 9 Awakening", "1451. Unknown 9 Awakening.jpg"],
+  ["Unpacking", "1452. Unpacking.jpg"],
+  ["Until Dawn", "1453. Until Dawn.jpg"],
+  ["V Rising", "1454. V Rising.jpg"],
+  ["Vacation Simulator", "1455. Vacation Simulator.jpg"],
+  ["Valheim", "1456. Valheim.jpg"],
+  ["Valkyrie Elysium", "1457. Valkyrie Elysium.jpg"],
+  ["Valkyrie Profile Lenneth", "1458. Valkyrie Profile Lenneth.jpg"],
+  ["Valor Mortis", "1459. Valor Mortis.jpg"],
+  ["Valthirian Arc Hero School Story 2", "1460. Valthirian Arc Hero School Story 2.jpg"],
+  ["Vampire Crawlers The Turbo Wildcard from Vampire Survivors", "1461. Vampire Crawlers The Turbo Wildcard from Vampire Survivors.jpg"],
+  ["Vampire Survivors", "1462. Vampire Survivors.jpg"],
+  ["Vampire The Masquerade Bloodlines 2", "1463. Vampire The Masquerade Bloodlines 2.jpg"],
+  ["Vampire The Masquerade Justice", "1464. Vampire The Masquerade Justice.jpg"],
+  ["Vampire The Masquerade Swansong", "1465. Vampire The Masquerade Swansong.jpg"],
+  ["Vanity Fair The Pursuit", "1466. Vanity Fair The Pursuit.jpg"],
+  ["VARLET", "1467. VARLET.jpg"],
+  ["Venatrix", "1468. Venatrix.jpg"],
+  ["Venba", "1469. Venba.jpg"],
+  ["Venus Vacation PRISM DEAD OR ALIVE Xtreme", "1470. Venus Vacation PRISM DEAD OR ALIVE Xtreme.jpg"],
+  ["Vertigo 2", "1471. Vertigo 2.jpg"],
+  ["VIEWFINDER", "1472. VIEWFINDER.jpg"],
+  ["Village in The Shade", "1473. Village in The Shade.jpg"],
+  ["Violet Wisteria", "1474. Violet Wisteria.jpg"],
+  ["Violetti Goottii", "1475. Violetti Goottii.jpg"],
+  ["Visage", "1476. Visage.jpg"],
+  ["Visions of Mana", "1477. Visions of Mana.jpg"],
+  ["Void tRrLM();++ //Void Terrarium++", "1478. Void tRrLM - Void Terrarium.jpg"],
+  ["VR Skater", "1479. VR Skater.jpg"],
+  ["Waltz of The Wizard", "1480. Waltz of The Wizard.jpg"],
+  ["Wanted Dead", "1481. Wanted Dead.jpg"],
+  ["War Mongrels", "1482. War Mongrels.jpg"],
+  ["Warhammer 40000 Boltgun", "1483. Warhammer 40000 Boltgun.jpg"],
+  ["Warhammer 40000 Space Marine 2", "1484. Warhammer 40000 Space Marine 2.jpg"],
+  ["Warhammer Age of Sigmar Realms of Ruin", "1485. Warhammer Age of Sigmar Realms of Ruin.jpg"],
+  ["WARRIORS Abyss", "1486. WARRIORS Abyss.jpg"],
+  ["Watch Dogs Legion", "1487. Watch Dogs Legion.jpg"],
+  ["Way of The Hunter", "1488. Way of The Hunter.jpg"],
+  ["We Love Katamari Reroll+ Royal Reverie", "1489. We Love Katamari Reroll+ Royal Reverie.jpg"],
+  ["Weird West Definitive Edition", "1490. Weird West Definitive Edition.jpg"],
+  ["Welcome to ParadiZe", "1491. Welcome to ParadiZe.jpg"],
+  ["Well Dweller", "1492. Well Dweller.jpg"],
+  ["Werewolf The Apocalypse Earthblood", "1493. Werewolf The Apocalypse Earthblood.jpg"],
+  ["What Remains of Edith Finch", "1494. What Remains of Edith Finch.jpg"],
+  ["White Day 2 The Flower That Tells Lies Complete Edition", "1495. White Day 2 The Flower That Tells Lies Complete Edition.jpg"],
+  ["White Day A Labyrinth Named School", "1496. White Day A Labyrinth Named School.jpg"],
+  ["Who Wants To Be A Millionaire", "1497. Who Wants To Be A Millionaire.jpg"],
+  ["Why Pizza?", "1498. Why Pizza.jpg"],
+  ["WILD HEARTS", "1499. WILD HEARTS.jpg"],
+  ["Winter Sports Games 4K Edition", "1500. Winter Sports Games 4K Edition.jpg"],
+  ["WinX Club The Magic is Back", "WinX Club The Magic is Back.jpg"],
+  ["WIPER", "1501. WIPER.jpg"],
+  ["Witch Spring R", "1502. Witch Spring R.jpg"],
+  ["Withering Rooms", "1503. Withering Rooms.jpg"],
+  ["Withering Rooms", "1504. Withering Rooms.jpg"],
+  ["Wizard With A Gun", "1505. Wizard With A Gun.jpg"],
+  ["Wo Long Fallen Dynasty", "1506. Wo Long Fallen Dynasty.jpg"],
+  ["Wobbly Life", "1507. Wobbly Life.jpg"],
+  ["WONDER BOY Asha in Monster World", "1508. WONDER BOY Asha in Monster World.jpg"],
+  ["Wonder Boy The Dragons Trap", "1509. Wonder Boy The Dragons Trap.jpg"],
+  ["Woodo", "1510. Woodo.jpg"],
+  ["World War Z Aftermath", "1511. World War Z Aftermath.jpg"],
+  ["Worms Armageddon Anniversary Edition", "1512. Worms Armageddon Anniversary Edition.jpg"],
+  ["WRC 10 Deluxe Edition", "1513. WRC 10 Deluxe Edition.jpg"],
+  ["WRC Generations", "1514. WRC Generations.jpg"],
+  ["Wreckfest Complete Edition", "1515. Wreckfest Complete Edition.jpg"],
+  ["Wreckreation", "1516. Wreckreation.jpg"],
+  ["WUCHANG Fallen Feathers", "1517. WUCHANG Fallen Feathers.jpg"],
+  ["WWE 2K22", "1518. WWE 2K22.jpg"],
+  ["WWE 2K23", "1519. WWE 2K23.jpg"],
+  ["WWE 2K24", "1520. WWE 2K24.jpg"],
+  ["WWE 2K25", "1521. WWE 2K25.jpg"],
+  ["WWE 2K26", "1522. WWE 2K26.jpg"],
+  ["WWI Isonzo Deluxe Edition", "1523. WWI Isonzo Deluxe Edition.jpg"],
+  ["Wytchwood", "1524. Wytchwood.jpg"],
+  ["XIII", "1525. XIII.jpg"],
+  ["Yakuza 0 Directors Cut", "1526. Yakuza 0 Directors Cut.jpg"],
+  ["Yakuza Kiwami 1 + 2", "1527. Yakuza Kiwami 1 + 2.jpg"],
+  ["Yakuza Kiwami 3 and Dark Ties", "1528. Yakuza Kiwami 3 and Dark Ties.jpg"],
+  ["Yakuza Like A Dragon Hero Edition", "1529. Yakuza Like A Dragon Hero Edition.jpg"],
+  ["Yasha Legends of The Demon Blade", "1530. Yasha Legends of The Demon Blade.jpg"],
+  ["Yatzi", "1531. Yatzi.jpg"],
+  ["YinYang Street Separate Ways", "1532. YinYang Street Separate Ways.jpg"],
+  ["YinYang Street Ultimate Edition", "1533. YinYang Street Ultimate Edition.jpg"],
+  ["Yonder The Cloud Catcher Chronicles", "1534. Yonder The Cloud Catcher Chronicles.jpg"],
+  ["Yooka Replaylee", "1535. Yooka Replaylee.jpg"],
+  ["You Suck At Parking", "1536. You Suck At Parking.jpg"],
+  ["Ys IX Monstrum Nox", "1537. Ys IX Monstrum Nox.jpg"],
+  ["Ys VIII Lacrimosa of Dana", "1538. Ys VIII Lacrimosa of Dana.jpg"],
+  ["Ys Memoire The Oath In Felghana", "Ys Memoire The Oath In Felghana.jpg"],
+  ["Ys X Proud Nordics", "1539. Ys X Proud Nordics.jpg"],
+  ["Yuoni", "1540. Yuoni.jpg"],
+  ["Zombie Cure Lab", "1541. Zombie Cure Lab.jpg"],
+  ["Zorro The Chronicles", "1542. Zorro The Chronicles.jpg"]
+    ];
+
+    const games = rawGamesData.map(item => ({
+      name: item[0],
+      cover: item[1]
+    }));
+
+    const grid = document.getElementById("games");
+    const search = document.getElementById("search");
+    const count = document.getElementById("count");
+    const selectedGames = new Set();
+    const multiWa = document.getElementById("multiWa");
+    const selectedCount = document.getElementById("selectedCount");
+
+    function updateMultiOrder() {
+      selectedCount.textContent = selectedGames.size;
+      const list = Array.from(selectedGames);
+      const message = list.length
+        ? "Halo Bagus Permana Gamez, saya mau pesan / tanya ketersediaan game PS5 HEN berikut:\n\n" +
+          list.map((name, i) => (i + 1) + ". " + name).join("\n") +
+          "\n\nMohon info harga dan ketersediaannya. Terima kasih."
+        : "";
+      multiWa.href = list.length
+        ? "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(message)
+        : "#";
+      multiWa.setAttribute("aria-label", list.length
+        ? "Pesan " + list.length + " game melalui WhatsApp"
+        : "Pilih game terlebih dahulu");
+    }
+
+    multiWa.addEventListener("click", function(event) {
+      if (selectedGames.size === 0) {
+        event.preventDefault();
+        alert("Silakan centang minimal satu game yang ingin dipesan.");
+      }
+    });
+
+    function render() {
+      const q = search.value.trim().toLowerCase();
+      const filtered = games.filter(g => g.name.toLowerCase().includes(q));
+      count.textContent = `Menampilkan ${filtered.length} dari ${games.length} game`;
+      grid.innerHTML = "";
+      
+      if (!filtered.length) {
+        grid.innerHTML = '<div class="empty">Game tidak ditemukan. Coba kata kunci lain, ya.</div>';
+        return;
+      }
+      
+      filtered.forEach(g => {
+        const card = document.createElement("article");
+        card.className = "card";
+        
+        const cover = document.createElement("div");
+        cover.className = "cover";
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.className = "game-select";
+        checkbox.checked = selectedGames.has(g.name);
+        checkbox.setAttribute("aria-label", "Pilih " + g.name);
+        if (checkbox.checked) cover.classList.add("is-selected");
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            selectedGames.add(g.name);
+            cover.classList.add("is-selected");
+          } else {
+            selectedGames.delete(g.name);
+            cover.classList.remove("is-selected");
+          }
+          updateMultiOrder();
+        });
+        cover.appendChild(checkbox);
+        
+        const img = document.createElement("img");
+        img.src = "covers/" + g.cover;
+        img.alt = "Cover " + g.name;
+        img.loading = "lazy";
+        
+        img.onerror = () => {
+          img.remove();
+          const fallback = document.createElement("div");
+          fallback.className = "fallback";
+          fallback.textContent = g.name;
+          cover.appendChild(fallback);
+        };
+        
+        cover.appendChild(img);
+        
+        const info = document.createElement("div");
+        info.className = "info";
+        
+        const name = document.createElement("div");
+        name.className = "name";
+        name.title = g.name;
+        name.textContent = g.name;
+        
+        const link = document.createElement("a");
+        link.className = "wa";
+        link.href = "https://wa.me/" + waNumber + "?text=" + encodeURIComponent("Halo Bagus Permana Gamez, saya mau tanya harga isi game PS5 HEN: " + g.name);
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.textContent = "Tanya via WhatsApp";
+        
+        info.append(name, link);
+        card.append(cover, info);
+        grid.appendChild(card);
+      });
+    }
+
+    search.addEventListener("input", render);
+    updateMultiOrder();
+    render();
+  </script>
+</body>
+</html>
